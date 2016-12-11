@@ -3,6 +3,7 @@ VAR wentAlone = 0
 
 
 === Mission_Talk_to_Azoteans ===
+TODO check what we know at this point about the creatures
 <Leader>So, if those creature really speak english, we need to talk with them. We sure have many things to lean from them.
 +<Leader>Let's go together.
     -> Talk_to_Azoteans
@@ -28,27 +29,51 @@ It's ok, we can all come now.
 
 
 = Talk_to_Azoteans
-We approach a group of creatures, talk to them, and learn many things.
-<Azotean>We cam from a distant planet but had to seek refuge here since the war...
+We approach a group of creatures, talk to them.
+<Azotean>Hello.
+TODO si on a na pas de bonnes relations avec les azoteens ici ils nous demandent de baisser les armes par prudence et on perd un point de military
+<Science>I was pretty sure this planet was empty.
+<Azotean>It used to be lifeless yes.
+<Science>So how did you arrive there?
+<Azotean>We came from a distant planet but had to seek refuge here since the war...
 ~cp_azoteans = max(cp_azoteans,5)
 +<Talk>[We'll be nice with you]From now on we'll consult you if we plan to make any change on this planet
     -> Nice_with_Azoteans
 +<Lazy>Ok, let's go back home
     -> Back_to_the_room
-+<Combat>Did you take part of that war ?
++<Combat>What war are you talking about ?
     -> War_history
-+<Leader>Where do the humans live?
-    -> Inhabitants_Location
--
--> Back_to_the_room
++<Leader>How did you learn our language?
+    -> Language
 
+
+= Language
+<Azotean>At some point it just felt necessary for us to learn the english language.
+<Azotean>So we could communicate with our human friends.
+<Leader>Your human friends ?
+<Azotean>Yes, I haven't seen them for ages though.
+~cp_inhabitants = max(cp_inhabitants,1)
++<Leader>Could you introduce us to your friends please?
+    <Azotean>Hmm, sorry but no, I can't. They live very far away from here.
+    -> Inhabitants_Location
++<Lazy>Ok a storm is coming, let's go back home now please! Now!
+    -> Back_to_the_room
 
 = War_history
-Not directly but we were chased by people from the earth because of...
+<Azotean>You should know! It was a war against people like you.
+~secrets=secrets+1
+<Combat>Really? You mean a war between you and people from the earth? When?
+<Azotean>More than a century ago.
+<Combat>I've never heard of that war.
+<Leader>Me neither.
+<Azotean>I know, many things have been kept secret. The other humans we met had no clue either.
+<Survive>The other humans? Who are you talking about?
+<Azotean>I'm talking about the other crew that live here... I thought you knew.
+<Leader>Who are those people? What do they look like?
+<Azotean>When we first met them, years ago, they looked pretty much exactly like you.
+<Azotean>I personnaly don't know much about them.
 Apparently there are other humans there.
-TODO tell a better story there
 ~cp_inhabitants = max(cp_inhabitants,1)
-The creatures call them portmanteau for some reason!
 -> Back_to_the_room
 
 
@@ -78,7 +103,8 @@ The azotean draws a mark on the sand, one meter away from the map, and points at
 
 
 = Approach_Azoteans_with_weapons
-They are very scared, 
+They are extremely scared, 
+TODO so history repeats again...
 ~relations=relations-1
 but accept tot talk with us
 -> Talk_to_Azoteans

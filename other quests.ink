@@ -17,6 +17,7 @@ VAR cp_vegetation = 0
 // 3 has heard a creature speak english
 // 4 knows the name of the creatures
 // 5 knows that the azoteans were a long time ago part of the affair that caused the holocaust
+// 6 what was this conflict about ?
 VAR cp_azoteans = 0
 
 // 1 knows that there are other humans
@@ -45,6 +46,9 @@ TODO put the following lines somewhere
 ~cp_mission = max(cp_mission,4)
 // 5 knows who is the traitor
 ~cp_mission = max(cp_mission,5)
+// 6 what was this conflict about ?
+~cp_azoteans = max(cp_azoteans,6)
+
 
 
 === Other_Quests ===
