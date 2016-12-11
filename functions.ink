@@ -4,7 +4,6 @@ EXTERNAL charName(list,id)
 EXTERNAL kill(list, id)
 EXTERNAL stateOf(list, id)
 EXTERNAL convertListId(listA, listB, id)
-EXTERNAL charName(list, id)
 
 
 == function lifeCycle()
@@ -41,3 +40,14 @@ EXTERNAL charName(list, id)
 == function convertListId(listA, listB, id)
 ~return -1
 
+== function min(a,b)
+{
+-a<b:~return a
+-else:~return b
+}
+
+== function max(a,b)
+{
+-a>b:~return a
+-else:~return b
+}

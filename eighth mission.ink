@@ -52,7 +52,7 @@ Check what happens...
 
 = Decision_5
     {
-        - aliveCount >= 2 : -> AliveCount_Success
+        - aliveCount >= 5 : -> AliveCount_Success
         - else : -> AliveCount_Success
     }
 

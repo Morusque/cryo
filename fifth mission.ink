@@ -17,31 +17,62 @@ VAR wentAlone = 0
     -> Back_to_the_room
 
 = Talk_to_Azoteans_Alone
-TODO use wentAlone variable
-(...Comes back)
-It's ok, you can all come now
+{charName("active",(wentAlone)%awakeCount)} goes and speaks with the creatures.
++(...later...)
+-
+{charName("active",(wentAlone)%awakeCount)} comes back.
+Everything seems to be ok. They seem to trust us.
+~relations=relations+1
+It's ok, we can all come now.
 -> Talk_to_Azoteans
 
 
 = Talk_to_Azoteans
-We learn many things.
-TODO parler de holocauste
-Apparently there are other humans there.
-They call them portmanteau!
-+<Talk>Where do they leave?
+We approach a group of creatures, talk to them, and learn many things.
+<Azotean>We cam from a distant planet but had to seek refuge here since the war...
++<Talk>[We'll be nice with you]From now on we'll consult you if we plan to make any change on this planet
+    -> Nice_with_Azoteans
 +<Lazy>Ok, let's go back home
-+<Combat>Rivals!
+    -> Back_to_the_room
++<Combat>Did you take part of that war ?
+    -> War_history
++<Leader>Where do the humans live?
+    -> Inhabitants_Location
 -
 -> Back_to_the_room
 
 
+= War_history
+Not directly but we were chased by people from the earth because of...
+Apparently there are other humans there.
+The creatures call them portmanteau for some reason!
+-> Back_to_the_room
+
+
+= Inhabitants_Location
+<Azotean>The other humans live right there.
+(the creature shoes the location on your map)
+~knowledge=knowledge+1
+-> Back_to_the_room
+
+
+= Nice_with_Azoteans
+~relations=relations+1
+<Azotean>I hope you will.
+-> Back_to_the_room
+
+
 = Approach_Azoteans_with_weapons
-They are scared, 
-but accept tot talk
+They are very scared, 
+~relations=relations-1
+but accept tot talk with us
 -> Talk_to_Azoteans
 
 
 = Back_to_the_room
-<Leader>The night falls. It's time to head back to the room.
-<Leader>Next time we talk to the humans.
+<Leader>We're starting to be short on oxygen.
+<Leader>And it takes some time to produce more of it.
+<Leader>It's time to head back to the room, but...
+<Leader>One day we'll come back here and talk to those humans.
 ->Ellipse
+
