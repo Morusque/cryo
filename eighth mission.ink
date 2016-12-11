@@ -5,43 +5,56 @@
 The ship comes for us to go back...
 Check what happens...
 {
-    - decision == 0 :
+    - decision == 0 : -> Decision_0
+    - decision == 1 : -> Decision_1
+    - decision == 2 : -> Decision_2
+    - decision == 3 : -> Decision_3
+    - decision == 4 : -> Decision_4
+    - decision == 5 : -> Decision_5
+}
+-> END
+
+
+= Decision_0
     {
         - secrets >= 2 : -> Secrets_success
         - else : -> Secrets_fail
     }
 
-    - decision == 1 :
+
+= Decision_1
     {
         - relations >= 2 : -> Relations_success
         - else : -> Relations_fail
     }
-    
-    - decision == 2 :
+
+
+= Decision_2
     {
         - knowledge >= 2 : -> Knowledge_success
         - else : -> Knowledge_fail
     }
-    
-    - decision == 3 :
+
+
+= Decision_3
     {
         - resources >= 2 : -> Resources_success
         - else : -> Resources_fail
     }
-    
-    - decision == 4 :
+
+
+= Decision_4
     {
         - military >= 2 : -> Military_success
         - else : -> Military_fail
     }
-    
-    - decision == 5 :
+
+
+= Decision_5
     {
         - aliveCount >= 2 : -> AliveCount_Success
         - else : -> AliveCount_Success
     }
-}
--> END
 
 
 = Secrets_success
