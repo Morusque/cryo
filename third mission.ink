@@ -1,6 +1,7 @@
 
 VAR mapDesigner = -1
 
+
 === Mission_Map ===
 <Leader>So...
 {
@@ -25,6 +26,7 @@ VAR mapDesigner = -1
 +<Lazy>We don't need a map.[]There's no need to question our mission or handle additional work, let's just proceed to the atmosphere thing and chill.
     -> Map_refuse
 
+
 = Map_design
 ~cp_map = max(cp_map,1)
 ~mapDesigner = lastChoiceId
@@ -34,16 +36,23 @@ VAR mapDesigner = -1
 ~cp_azoteans = max(cp_azoteans,1)
 -> Creatures_encounter
 
+
 = Map_refuse
-<Leader> Ok, no map then...
-TODO do something instead of making a map
+<Leader>Ok, no map then...
+<Leader>So how should we spend our time then ?
++<Combat>Maybe we could build fundations under that big gulf and use it as a bunker if needed.
+    ~military=military+1
++<Survive>I want to double check and update the GOE reports about this planet.
+    ~secrets=secrets+1
 -> Back_to_the_room
+
 
 = Creatures_encounter
 <CharId{mapDesigner+1}>What is this symbol on the map ?
 <CharId{mapDesigner}>Oh... you really need to see this on the next mission...
 ~cp_azoteans = max(cp_azoteans,1)
 -> Back_to_the_room
+
 
 = Back_to_the_room
 <Leader>This is really a crappy planet. There has to be a better one.
