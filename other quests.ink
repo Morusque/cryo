@@ -1,18 +1,23 @@
 
 // checkpoints :
-// knows that it's hard to grow something on this planet
-// knows that there are other creatures
-// has heard a creature speak english
-// knows the name of the creatures
-// knows that there are other humans
-// knows the location of the other humans
-// knows that the other human inhabitants are the previous science team, if we fail there will be a next one
-// knows that the azoteans were a long time ago part of the affair that caused the holocaust
-// knows that changing the atmosphere will kill the azoteans
-// has talked with the humans
-// knows that the government has hidden plans
-// knows who is the traitor
-
+// 1 knows that it's hard to grow something on this planet
+// 2 knows that plants are poisonous
+VAR cp_vegetation = 0
+// 1 knows that there are other creatures
+// 2 has heard a creature speak english
+// 3 knows the name of the creatures
+// 4 knows that the azoteans were a long time ago part of the affair that caused the holocaust
+VAR cp_azoteans = 0
+// 1 knows that there are other humans
+// 2 knows the location of the other humans
+// 3 has talked with the humans
+// 4 knows that the other human inhabitants are the previous science team
+// 5 knows that if we fail there will be a next expedition
+VAR cp_inhabitants = 0
+// 1 knows that changing the atmosphere will kill the azoteans
+// 2 knows that this mission was a hidden plan from the government
+// 3 knows who is the traitor
+VAR mission = 0
 
 === Other_Quests ===
 

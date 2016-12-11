@@ -3,7 +3,10 @@ VAR decision = -1
 // secrets, relations, knowledge, resources, military, aliveCount
 
 === Mission_Decide ===
-The support ship will arrive in ten years...
+<Leader> I'm not sure what to think about this mission anymore.
++ <Leader>Let's sum up the situation.
+
+<Leader>The support ship will arrive in ten years...
 What should we do ?
 +<Leader>Denounce the earth president.
     decision = 0// sercets
