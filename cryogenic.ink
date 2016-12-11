@@ -7,6 +7,8 @@ INCLUDE sixth mission.ink
 INCLUDE seventh mission.ink
 INCLUDE eighth mission.ink
 
+EXTERNAL oldAgeCheck()
+
 VAR aliveCount = 6
 VAR year = 1
 VAR lastChoiceId = -1
@@ -93,9 +95,28 @@ I'm never going outside alone !
 === Ellipse ===
 + Ten years later...
 -
-(...if somebody is too old there s/he dies...)
+-> Check_dead(oldAgeCheck(),0) ->
 -> Check_awake ->
 + <Leader> Ok, it's time to switch, so... Who will be awake for the next ten years ?
 -
 -> Cryopreservation
+
+
+=== Check_dead(_nbNewlyDead, _deadIndex) ===
+{
+- _deadIndex < _nbNewlyDead : 
+    ~_deadIndex = _deadIndex +1
+    {charName("newlyDead",_deadIndex)} is dead
+    -> Check_dead(_nbNewlyDead, _deadIndex) ->
+}
+->->
+
+
+== function oldAgeCheck()
+~return 0
+
+
+== function charName(list, id)
+// newlyDead, dead, active, frozen, all, alive
+~return 0
 
