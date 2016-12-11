@@ -8,7 +8,7 @@ INCLUDE seventh mission.ink
 INCLUDE eighth mission.ink
 INCLUDE functions.ink
 INCLUDE other quests.ink
-INCLUDE casual discussions
+INCLUDE casual discussions.ink
 
 
 
