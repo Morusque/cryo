@@ -1,0 +1,21 @@
+
+TODO add those somewhere...
+
+=== Next_expedition ===
+<Leader>What will happen if we never convert the azote from the atmosphere?
+{
+-cp_inhabitants>=4:
+    <Lazy>Well, I'm pretty sure a new expedition will come, and then another one...
+    <Lazy>Every 80 years, until the mission is finally fulfilled.
+    ~cp_inhabitants = max(cp_inhabitants,5)
+    {
+    -cp_mission>=5:
+    <Lazy>That's a fact, I know about it.
+    ~secrets=secrets+1;
+    }
+-else:
+    <Lazy>Well...1 I don't know.
+    <Talk>You mean will we be sanctionned or something ?
+    <Lazy>Our lifes will really have been purposeless I suppose. That's a sufficient sanction to me.
+}
+
