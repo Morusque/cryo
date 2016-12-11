@@ -48,7 +48,7 @@ HUMAN : You want advice, let me tell you our story. I'm sure you will know what 
 ->HumansStory->
 <CharId{lastChoiceId}>Wow. I think I'm even more confused that before.
 <CharId{lastChoiceId+1}>I agree for once.
-We are baffled by the revelations, and head back to the room while trying to make sense of the recent events.
+We are baffled by the revelations. After spending a few hours with them, we head back to our temporary camp while trying to make sense of the recent events.
 -> Back_to_the_room
 
 = Everything
@@ -60,7 +60,8 @@ HUMAN : And that's where things get interesting.
 <CharId{lastChoiceId+1}> Let him finish, {charName("active",lastChoiceId)}.
 ->Symbiots->
 <CharId{lastChoiceId}>Wow. That was something.
-We are completely stunned by the amount of information, and we head back to the room with our head full of new questions.
+We are completely stunned by the amount of information.
+After spending a few hours with them we head back to our temporary camp, our head full with new questions.
 -> Back_to_the_room
 
 = AzoticEnvironment
@@ -68,7 +69,7 @@ HUMAN : That is a very good question. Let me explain.
 ->Symbiots->
 <CharId{lastChoiceId+1}>Wow that was intense.
 <CharId{lastChoiceId}> Don't listen to him. This was probably the most enlightening moment of my life. Thank you very much.
-We are stunned by the human's speech. After some more questions about symbiosis, we decide head back to the room, our head full with new perspectives.
+We are stunned by the human's speech. After spending the evening with them, we decide to head back to our temporary camp, our head full with new perspectives.
 -> Back_to_the_room
 
 = WhereDoYouComeFrom
@@ -89,10 +90,11 @@ HUMAN : but I will need to go a bit into details, and I apologize in advance for
 <$Science>You mean that was the most enlightening I ever heard.
 <$Combat>I'm still having a hard time trusting guys that wear space blobs as hats.
 <$Science>Please just keep quiet.
-We are a bit reassured by the human's speech. However we still aren't totally comfortable with them and quickly make our way back to the room.
+We are a bit reassured by the human's speech. However we still aren't totally comfortable with them and after a few hours we make our way back to the temporary camp.
 -> Back_to_the_room
 
 = Nothing
+Sensing danger, we quickly take leave of the humans. We observe them from a safe distance for a few hours, then head back to our temporary camp.
 -> Back_to_the_room
 
 = HumansStory
@@ -126,5 +128,10 @@ TODO le principe de symbiose
 
 = Back_to_the_room
 ~cp_inhabitants = max(cp_inhabitants,3)
-<Leader>The night falls. It's time to head back to the room.
+The next day, a terrible storm rages and we are unable to leave the camp.
+When the storm finally calms down, we try to go back to the humans' camp, but we turn in circles without seeing any huts.
+It's unclear whether we lost the location, or if they left. 
+We decide that the expedition was a success anyway, and start our way back.
+<$Leader>Let's go. We have a long way home.
+<$Combat>Home ? Not even close.
 ->Ellipse
