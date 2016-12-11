@@ -1,6 +1,10 @@
 
 // checkpoints :
 
+// 1 the player has heard about water
+// 2 the player has seen water once
+VAR cp_water = 0
+
 // 1 knows that it's hard to grow something on this planet
 // 2 knows that plants are poisonous
 VAR cp_vegetation = 0
