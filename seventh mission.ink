@@ -1,13 +1,22 @@
 
+VAR decision = -1
+// secrets, relations, knowledge, resources, military, aliveCount
+
 === Mission_Decide ===
 The support ship will arrive in ten years...
 What should we do ?
-+<Leader>Denounce the earth president.(secrets)
-+<Talk>Try to find a good compromise.(relations)
-+<Science>Convert the atmosphere.(knowledge)
-+<Survive>Hide there and become symbiots.(ressources)
-+<Combat>Fight !(military)
-+<Lazy>Nothing.(aliveCount)
++<Leader>Denounce the earth president.
+    decision = 0
++<Talk>Try to find a good compromise.
+    decision = 1
++<Science>Convert the atmosphere.
+    decision = 2
++<Survive>Hide there and become symbiots.
+    decision = 3
++<Combat>Fight !
+    decision = 4
++<Lazy>Nothing.
+    decision = 5
 -
 -> Back_to_the_room
 
