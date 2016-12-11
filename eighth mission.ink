@@ -45,57 +45,62 @@ Check what happens...
 
 
 = Secrets_success
-SUCCESS
+We reveal all the secrets about the president's plans, he's imprisonned.
 ->END
 
 
 = Secrets_fail
-FAILURE
+We come back to earth to launch a claim against the president, but didn't bring enough proofs against him.
 ->END
 
+
 = Relations_success
-SUCCESS
+We try to reason both Azoteans and earth politicians that they could forgive each other and live in peace.
 ->END
 
 
 = Relations_fail
-FAILURE
+We fail to find an agreement.
 ->END
 
+
 = Knowledge_success
-SUCCESS
+As we leave the planet the azote has completely disappeared, it's only a matter of days before all azoteans disappear.
 ->END
 
 
 = Knowledge_fail
-FAILURE
+We fail to convert the atmosphere of the planet, another team will try.
 ->END
 
+
 = Resources_success
-SUCCESS
+We become symbiots with the Azoteans.
 ->END
 
 
 = Resources_fail
-FAILURE
+The Azoteans don't trust us and refuse to get in symbiosis with you.
 ->END
 
+
 = Military_success
-SUCCESS
+We wait for the next resuce team and shoot their ship, then continue to live for years in the room.
 ->END
 
 
 = Military_fail
-FAILURE
+For some reason the government know about our plans, one day a missile arrives and destroys the room, we are now dommed.
 ->END
 
+
 = AliveCount_Success
-SUCCESS
+Unfortunately most of us are dead when the rescue ship arrives.
 ->END
 
 
 = AliveCount_Fail
-FAILURE
+We decide to forget about all this story, we return to earth and live a happy life.
 ->END
 
 

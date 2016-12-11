@@ -12,6 +12,7 @@ What do we ask.
 -
 -> Back_to_the_room
 
+TODO parler de holocauste
 
 = Back_to_the_room
 <Leader>The night falls. It's time to head back to the room.

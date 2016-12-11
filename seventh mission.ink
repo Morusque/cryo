@@ -6,20 +6,21 @@ VAR decision = -1
 The support ship will arrive in ten years...
 What should we do ?
 +<Leader>Denounce the earth president.
-    decision = 0
+    decision = 0// sercets
 +<Talk>Try to find a good compromise.
-    decision = 1
+    decision = 1// relations
 +<Science>Convert the atmosphere.
-    decision = 2
+    decision = 2// knowledge
 +<Survive>Hide there and become symbiots.
-    decision = 3
+    decision = 3// resources
 +<Combat>Fight !
-    decision = 4
+    decision = 4// military
 +<Lazy>Nothing.
-    decision = 5
+    decision = 5// aliveCount
 -
 -> Back_to_the_room
 
+TODO expliquer a quoi sert vraiment le changement d atmosphere
 
 = Fight
 <Combat>We fight !
