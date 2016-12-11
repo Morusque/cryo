@@ -14,8 +14,9 @@ TODO check what we know at this point about the creatures
     -> Talk_to_Azoteans
 +<Combat>Ok... But let's bring some weapons.
     -> Approach_Azoteans_with_weapons
-+<Lazy>Leave those guys alone.
++<Lazy>Leave those guys alone.[]For some reason we shortly went back to the room.
     -> Back_to_the_room
+
 
 = Talk_to_Azoteans_Alone
 {charName("active",(wentAlone)%awakeCount)} goes and speaks with the creatures.
@@ -40,7 +41,7 @@ TODO si on a na pas de bonnes relations avec les azoteens ici ils nous demandent
 +<Talk>[We'll be nice with you]From now on we'll consult you if we plan to make any change on this planet
     -> Nice_with_Azoteans
 +<Lazy>Ok, let's go back home
-    -> Back_to_the_room
+    -> Talk_on_the_way_back
 +<Combat>What war are you talking about ?
     -> War_history
 +<Leader>How did you learn our language?
@@ -74,7 +75,7 @@ TODO si on a na pas de bonnes relations avec les azoteens ici ils nous demandent
 <Azotean>I personnaly don't know much about them.
 Apparently there are other humans there.
 ~cp_inhabitants = max(cp_inhabitants,1)
--> Back_to_the_room
+-> Lack_of_oxygen
 
 
 = Inhabitants_Location
@@ -93,13 +94,13 @@ The azotean draws a mark on the sand, one meter away from the map, and points at
 }
 ~cp_inhabitants = max(cp_inhabitants,2)
 ~knowledge=knowledge+1
--> Back_to_the_room
+-> Lack_of_oxygen
 
 
 = Nice_with_Azoteans
 ~relations=relations+1
 <Azotean>I hope you will.
--> Back_to_the_room
+-> Lack_of_oxygen
 
 
 = Approach_Azoteans_with_weapons
@@ -110,10 +111,32 @@ but accept tot talk with us
 -> Talk_to_Azoteans
 
 
-= Back_to_the_room
+= Talk_on_the_way_back
+We left early and had a chance to talk on the way back home...
+Many questions ran through our heads.
+TODO check if the following lines work
+{
+-cp_mission>=1||stateOf("all", idOf("Suzie"))>=1:
+    As we exposed our theories it became clear to everybody that the government had something in mind...
+    This mission was not only to prepare the earth for potential upcoming humans, there was something else.
+    ~cp_mission = max(cp_mission,2)
+-else:
+    Everybody has a different hypothesis about what we just saw, but nothing seems to make completely sense.
+}
+-> Back_to_the_room
+
+
+= Lack_of_oxygen
 <Leader>We're starting to be short on oxygen.
 <Leader>And it takes some time to produce more of it.
 <Leader>It's time to head back to the room, but...
 <Leader>One day we'll come back here and talk to those humans.
-->Ellipse
+~resources = resources-1
+-> Back_to_the_room
 
+
+= Back_to_the_room
+(...time passes...)
+Producing oxygen in the rooms takes indeed a lot of time...
+And as time passes slowly, we're starting to be very impatient to head back outside.
+->Ellipse
