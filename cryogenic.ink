@@ -71,11 +71,14 @@ I'm never going outside alone !
 
 === Choix_mission ===
 <Leader>So what do we dow now ?
-*<Science>{~Look on the map there is|Over there it seems there is|Have a look at the map there is} {~a gulf|a creek|a cliff} {~not far from there|close from the base|a few miles away} {~to the east|in the north|in the west}, let's go and have a look.
+~temp firstChoice = "{~Look on the map there is|Over there it seems there is|Have a look at the map there is} {~a gulf|a creek|a cliff} {~not far from there|close from the base|a few miles away} {~to the east|in the north|in the west}, let's go and have a look."
+~temp secondChoice = "{~We really need to|We should|It would be wise to} plant vegetables and gather food."
+~temp thirdChoice = "{~We should investigate|I want to understand|I want to know more about} why we were sent on this particular planet."
+*<Science>{firstChoice}
     -> Mission_Releves
-*<Survive>{~We really need to|We should|It would be wise to} plant vegetables and gather food.
+*<Survive>{secondChoice}
     -> Mission_Field
-*<Leader>{~We should investigate|I want to understand|I want to know more about} why we were sent on this particular planet.
+*<Leader>{thirdChoice}
     -> Mission_Map
 +[]
     ->Mission_advanced

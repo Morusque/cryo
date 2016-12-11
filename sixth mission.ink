@@ -1,7 +1,8 @@
 
 === Mission_Talk_to_inhabitants ===
 <Leader>Let's go find those humans... Surely it will help us to understand what is going on here.
-We finally find the other humans. The top of their bodies is fully covered by a translucent and slimy lump that seems to be moving on its own. They great us in english, but their voice is eerily muffled by their unusual headwear.
+We finally find the other humans. The top of their bodies is fully covered by a translucent and slimy lump that seems to be moving on its own. 
+They great us in english, but their voice is eerily muffled by their unusual headwear.
 A bit shaken by the encounter, we hesitate on the question to ask :
 
 +<Talk>Please, tell us everything you know.->Everything
@@ -28,9 +29,9 @@ HUMAN : You want to know everything ! Let's start with the beginning then...
 ->HumansStory->
 HUMAN : And that's where things get interesting.
 <CharId{lastChoiceId}> You mean there is more ?
-<CharId{lastChoiceId+1}> Let him finish, {charName("active",lastChoiceId+1)}.
+<CharId{lastChoiceId+1}> Let him finish, {charName("active",lastChoiceId)}.
 ->Symbiots->
-<CharId{lastChoiceId+1}>Wow. That was something.
+<CharId{lastChoiceId}>Wow. That was something.
 We are completely stunned by the amount of information, and we head back to the room with our head full of new questions.
 -> Back_to_the_room
 
