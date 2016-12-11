@@ -29,8 +29,8 @@ For some reason somebody finds something and...
 -> Creatures_encounter
 
 = Creatures_encounter
-<WhoeverDidntDesignedTheMap>What is this symbol on the map ?
-<WhoeverDesignedTheMap>Oh... you really need to see this on the next mission...
+<CharId{mapDesigner+1}>What is this symbol on the map ?
+<CharId{mapDesigner}>Oh... you really need to see this on the next mission...
 -> Back_to_the_room
 
 = Back_to_the_room
