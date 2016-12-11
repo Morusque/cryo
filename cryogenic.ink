@@ -7,6 +7,8 @@ INCLUDE sixth mission.ink
 INCLUDE seventh mission.ink
 INCLUDE eighth mission.ink
 INCLUDE functions.ink
+INCLUDE other quests.ink
+
 
 VAR aliveCount = 6
 VAR year = 1
