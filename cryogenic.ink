@@ -9,6 +9,7 @@ INCLUDE eighth mission.ink
 
 EXTERNAL lifeCycle()
 EXTERNAL kill(list, id)
+EXTERNAL stateOf(list, id)
 
 VAR aliveCount = 6
 VAR year = 1
@@ -126,3 +127,19 @@ I'm never going outside alone !
 // newlyDead, dead, active, frozen, all, alive
 ~return 
 
+
+== function ifOd(name)
+{
+- name=="Suzie":~return 0
+- name=="Ruth":~return 1
+- name=="Madeleine":~return 2
+- name=="The valet":~return 3
+- name=="Brandon":~return 4
+- name=="Lucien":~return 5
+}
+~return -1
+
+
+== function stateOf(list, id)
+// dead, frozen, awake
+~return -1
