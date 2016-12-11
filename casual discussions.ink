@@ -10,8 +10,8 @@ TODO add those somewhere...
     ~cp_inhabitants = max(cp_inhabitants,5)
     {
     -cp_mission>=5:
-    <Lazy>That's a fact, I know about it.
-    ~secrets=secrets+1;
+        <Lazy>That's a fact, I know about it.
+    ~secrets=secrets+1
     }
 -else:
     <Lazy>Well...1 I don't know.
