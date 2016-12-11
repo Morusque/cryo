@@ -107,6 +107,8 @@ HUMAN : Their people witnessed a long time ago the very worst of human deeds, a 
 HUMAN : Now the President is trying to silence them once and for all, by poisoning their atmosphere in secret.
 HUMAN :But he never consider that we would be able to communicate with the Azoteans and to understand the workings of all this.
 HUMAN : We played dead and they bought it. Now you're here and you're welcome to do the same.
+~cp_mission = max(cp_mission,3)
+~cp_inhabitants = max(cp_inhabitants,4)
 ->->
 
 =Symbiots
@@ -123,5 +125,6 @@ TODO ici expliquer a quoi sert vraiment le changement d atmosphere
 TODO le principe de symbiose
 
 = Back_to_the_room
+~cp_inhabitants = max(cp_inhabitants,3)
 <Leader>The night falls. It's time to head back to the room.
 ->Ellipse
