@@ -5,6 +5,9 @@
 // 2 the player has seen water once
 VAR cp_water = 0
 
+// 1 the player has started the map
+VAR cp_map = 0
+
 // 1 knows that it's hard to grow something on this planet
 // 2 knows that plants are poisonous
 VAR cp_vegetation = 0

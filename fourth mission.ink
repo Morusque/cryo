@@ -2,8 +2,15 @@
 VAR firstSpeaker = 0
 
 === Mission_Observe_Azoteans ===
+{
+-cp_map==0:
+One night, we hear strange noises outside
+It turns out to be weird angry creatures!
+~relations=relations-1
+-cp_map>=1:
 We walk to the spot on the map...
 It turns out to be weird creatures!
+}
 ~cp_azoteans = max(cp_azoteans,2)
 +<Talk>Let me approach them alone!
     ~firstSpeaker = lastChoiceId

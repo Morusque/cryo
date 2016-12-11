@@ -26,6 +26,7 @@ VAR mapDesigner = -1
     -> Map_refuse
 
 = Map_design
+~cp_map = max(cp_map,1)
 ~mapDesigner = lastChoiceId
 (...later...)
 <CharId{mapDesigner}>While designing the map, I found something, come with me !
@@ -34,9 +35,9 @@ VAR mapDesigner = -1
 -> Creatures_encounter
 
 = Map_refuse
-For some reason somebody finds something and...
-~cp_azoteans = max(cp_azoteans,1)
--> Creatures_encounter
+<Leader> Ok, no map then...
+TODO do something instead of making a map
+-> Back_to_the_room
 
 = Creatures_encounter
 <CharId{mapDesigner+1}>What is this symbol on the map ?
@@ -45,7 +46,7 @@ For some reason somebody finds something and...
 -> Back_to_the_room
 
 = Back_to_the_room
-<Leader>There has to be a better planet.
+<Leader>This is really a crappy planet. There has to be a better one.
 <$Science>I've actually studied the spectral composition of the planets around here and at least two of them, CLX-23 or UVA-54, seems to be really good candidates... Nothing prevents us to go there. What do you think about leaving this place and start again elsewhere ?
 <$Lazy>Sorry but we have to stick to the orders.
 <$Leader>Well, if our goal is ultimately to find a good place for human people to go, I guess prospecting the planets around us should also be considered part of it. Why don't we vote together ?
