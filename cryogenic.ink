@@ -6,10 +6,7 @@ INCLUDE fifth mission.ink
 INCLUDE sixth mission.ink
 INCLUDE seventh mission.ink
 INCLUDE eighth mission.ink
-
-EXTERNAL lifeCycle()
-EXTERNAL kill(list, id)
-EXTERNAL stateOf(list, id)
+INCLUDE functions.ink
 
 VAR aliveCount = 6
 VAR year = 1
@@ -113,33 +110,3 @@ I'm never going outside alone !
 }
 ->->
 
-
-== function lifeCycle()
-~return 0
-
-
-== function charName(list, id)
-// newlyDead, dead, active, frozen, all, alive
-~return 0
-
-
-== function kill(list, id)
-// newlyDead, dead, active, frozen, all, alive
-~return 
-
-
-== function idOf(name)
-{
-- name=="Suzie":~return 0
-- name=="Ruth":~return 1
-- name=="Madeleine":~return 2
-- name=="The valet":~return 3
-- name=="Brandon":~return 4
-- name=="Lucien":~return 5
-}
-~return -1
-
-
-== function stateOf(list, id)
-// dead, frozen, awake
-~return -1
