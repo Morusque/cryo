@@ -2,6 +2,7 @@
 === Mission_Observe_Azoteans ===
 We walk to the spot on the map...
 It turns out to be weird creatures!
+~cp_azoteans = max(cp_azoteans,2)
 +<Talk>Let me approach them alone!
     -> Approach_Azotean_Alone
 +<Leader>Let's go and walk to them together.
@@ -42,15 +43,21 @@ Capture azotean.
 -> Back_to_the_room
 
 = Azotean_confidence
+TODO whoever spoke
 <whoeverSpoke>The creature told me many secrets.
+~cp_azoteans = max(cp_azoteans,3)
+<whoeverSpoke>Is is an azoteans creature
+~cp_azoteans = max(cp_azoteans,4)
 -> Back_to_the_room
 
 = Leave_Azotean_alone
 Leave azotean alone, you hear "thank you"
+~cp_azoteans = max(cp_azoteans,3)
 -> Back_to_the_room
 
 = Kill_captive_Azotean
     As we kill it, we hear it whisper "Please, no..."
+    ~cp_azoteans = max(cp_azoteans,3)
 -> Back_to_the_room
 
 = Fight_Azotean
@@ -58,5 +65,6 @@ Fight !
 -> Back_to_the_room
 
 = Back_to_the_room
+TODO make it so that you may not have heard english yet
 <Leader>So... Do you really think these creatures speak english? How could that be.
 ->Ellipse

@@ -22,15 +22,18 @@ VAR mapDesigner = -1
 (...later...)
 <CharId{mapDesigner}>While designing the map, I found something, come with me !
 ~knowledge = knowledge + 1
+~cp_azoteans = max(cp_azoteans,1)
 -> Creatures_encounter
 
 = Map_refuse
 For some reason somebody finds something and...
+~cp_azoteans = max(cp_azoteans,1)
 -> Creatures_encounter
 
 = Creatures_encounter
 <CharId{mapDesigner+1}>What is this symbol on the map ?
 <CharId{mapDesigner}>Oh... you really need to see this on the next mission...
+~cp_azoteans = max(cp_azoteans,1)
 -> Back_to_the_room
 
 = Back_to_the_room

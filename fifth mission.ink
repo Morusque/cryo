@@ -30,6 +30,7 @@ It's ok, we can all come now.
 = Talk_to_Azoteans
 We approach a group of creatures, talk to them, and learn many things.
 <Azotean>We cam from a distant planet but had to seek refuge here since the war...
+~cp_azoteans = max(cp_azoteans,5)
 +<Talk>[We'll be nice with you]From now on we'll consult you if we plan to make any change on this planet
     -> Nice_with_Azoteans
 +<Lazy>Ok, let's go back home
