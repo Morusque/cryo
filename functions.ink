@@ -4,7 +4,6 @@ EXTERNAL charName(list,id)
 EXTERNAL kill(list, id)
 EXTERNAL stateOf(list, id)
 EXTERNAL convertListId(listA, listB, id)
-EXTERNAL charName(list, id)
 
 
 == function lifeCycle()
