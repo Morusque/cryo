@@ -35,8 +35,22 @@ We need to choose a place to plant a field.
 +<Combat>I said trees.
     -> Weird_trees
 +<Lazy>I'm sure we can find vegetations somewhere without any need for us to plant anything.
-    TODO la suite?
-    -> Back_to_the_room
+    -> Find_vegetation
+
+
+= Find_vegetation
+We find weird vegetation.
+Who wants to eat ?
++<Survive>Me
++<Science>Me
++<Leader>Me
++<Talk>Me
++<Combat>Me
++<Lazy>Me
+-
+kill("active",lastChoiceId)
+charName("active",lastChoiceId) eats the fruit and dies
+-> Back_to_the_room
 
 
 = Plant_few

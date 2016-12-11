@@ -7,7 +7,8 @@ INCLUDE sixth mission.ink
 INCLUDE seventh mission.ink
 INCLUDE eighth mission.ink
 
-EXTERNAL oldAgeCheck()
+EXTERNAL lifeCycle()
+EXTERNAL kill()
 
 VAR aliveCount = 6
 VAR year = 1
@@ -95,7 +96,7 @@ I'm never going outside alone !
 === Ellipse ===
 + Ten years later...
 -
--> Check_dead(oldAgeCheck(),0) ->
+-> Check_dead(lifeCycle(),0) ->
 -> Check_awake ->
 + <Leader> Ok, it's time to switch, so... Who will be awake for the next ten years ?
 -
@@ -112,11 +113,16 @@ I'm never going outside alone !
 ->->
 
 
-== function oldAgeCheck()
+== function lifeCycle()
 ~return 0
 
 
 == function charName(list, id)
 // newlyDead, dead, active, frozen, all, alive
 ~return 0
+
+
+== function kill(list, id)
+// newlyDead, dead, active, frozen, all, alive
+~return 
 
