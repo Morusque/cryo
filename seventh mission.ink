@@ -4,11 +4,43 @@ VAR decision = -1
 
 === Mission_Decide ===
 <Leader> I'm not sure what to think about this mission anymore.
-+ <Leader>Let's sum up the situation.
-
+<Leader>Let's sum up the situation.
+<Survive>We're supposed to make this planet friendly within ten years.
+{
+    -cp_vegetation >= 1 :
+    <Survive>But we couldn't manage to grow any kind of vegetables.
+    -cp_vegetation >= 2 :
+    <Survive>And the plants that naturally grow here are poisonous for us humans.
+}
+<Combat>The order of mission said there was no form of life here.
+{
+    -cp_azoteans >= 1 :
+    <Combat>But in addition to fungus and plants, we've met a few creatures there.
+    -cp_azoteans >= 2 :
+    <Combat>We can easily communicate with each other.
+    -cp_azoteans >= 4 :
+    <Combat>And since they were part of the mineral conflict years ago, it's safe to say the GOE knows about them.
+}
+<Talk>The mission orders described itself as the first human expedition on this planet.
+{
+    -cp_inhabitants >= 1 :
+    <Talk>But we're now sure that this is not true.
+    -cp_inhabitants >= 4 :
+    <Talk>But we've met the survivors from a previous expedition with the same goal as ours, 80 years ago.
+    -cp_inhabitants >= 5 :
+    <Talk>So our mission is not the first... And if we fail to clean the atmosphere, it will obviously not be the last.
+}
+{
+    -cp_mission >= 1 :
+    <Science>We know that cleaning the atmosphere will be very likely to kill all the azotean creatures.
+    -cp_mission >= 2 :
+    <Science>I'm pretty sure the GOE doesn't care at all about this "second earth" project, it just wants to kill all the Azoteans.
+    -cp_mission == 3 :
+    <Science>And I have to say I'm pretty sure one of us knew about all of this.
+}
 <Leader>The support ship will arrive in ten years...
-What should we do ?
-+<Leader>Denounce the earth president.
+<Leader>What should we do ?
++<Leader>Denounce the GOE.
     decision = 0// sercets
 +<Talk>Try to find a good compromise.
     decision = 1// relations

@@ -16,8 +16,10 @@ VAR cp_azoteans = 0
 VAR cp_inhabitants = 0
 // 1 knows that changing the atmosphere will kill the azoteans
 // 2 knows that this mission was a hidden plan from the government
-// 3 knows who is the traitor
-VAR mission = 0
+// 3 knows that the real goal of the GOE is to delete every witness from the holocaust
+// 4 knows that there is a traitor
+// 5 knows who is the traitor
+VAR cp_mission = 0
 
 === Other_Quests ===
 
@@ -30,4 +32,4 @@ TODO le traître a débranché l'un des scaphandres
 TODO rajouter des changements des variables de réussite/echecs
 TODO parler de pourquoi il y a eu l'holocauste à l'époque (on nous envoie trafiquer cette planète de la même manière qu'ils avaient envoyé il y a longtemps des équipes piller les minerais, ça a fait beaucoup de grabuge il paraît, etc...)
 TODO parler de pourquoi on nous envoie chercher une deuxième terre (il n'y a pas de besoin urgent, il y a des terres plus proches etc)
-
+TODO parler de pourquoi exactement les azoteens doivent être tués (pour qu'il ne reste aucun témoin de l'holocauste)
