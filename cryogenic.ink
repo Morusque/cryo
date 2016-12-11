@@ -13,6 +13,7 @@ INCLUDE other quests.ink
 VAR aliveCount = 6
 VAR year = 1
 VAR lastChoiceId = -1
+VAR missionNumber = 0
 
 VAR awakeCount = 3
 VAR knowledge = 0
@@ -70,19 +71,26 @@ I'm never going outside alone !
 
 
 === Choix_mission ===
-<Leader>So what do we dow now ?
-~temp firstChoice = "{~Look on the map there is|Over there it seems there is|Have a look at the map there is} {~a gulf|a creek|a cliff} {~not far from there|close from the base|a few miles away} {~to the east|in the north|in the west}, let's go and have a look."
+<$Leader>{~So|Alright|Ok} what {~{~should|do} we {~do|plan to do}|will be our plan|will be our objective} {now|{~now|this time}}?
+~temp firstChoice = "{On the map there is a|There is this|We've been talking for a while about this} chasm {~not far from there|close from the base|a few miles away} to the east, {it's a good place for geologic surveys.|we can do the geologic surveys there.|we should go do the geologic surveys there.}"
 ~temp secondChoice = "{~We really need to|We should|It would be wise to} plant vegetables and gather food."
 ~temp thirdChoice = "{~We should investigate|I want to understand|I want to know more about} why we were sent on this particular planet."
 *<Science>{firstChoice}
-    -> Mission_Releves
+    -> Mission_intro -> Mission_Releves
 *<Survive>{secondChoice}
     -> Mission_Field
 *<Leader>{thirdChoice}
     -> Mission_Map
-+[]
-    ->Mission_advanced
++[]->Mission_advanced
 
+===Mission_intro===
+{
+    -missionNumber==0:
+        After spending the first months setting up the camp and taking our bearings, we are finally ready to engage in the first step of our mission.
+    -missionNumber==1:
+        This time the camp is already up and functional. It's only a few weeks of planification before we start our next objective.
+}
+->->
 
 === Mission_advanced ===
 *That spot on the map...

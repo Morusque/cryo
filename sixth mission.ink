@@ -133,5 +133,5 @@ When the storm finally calms down, we try to go back to the humans' camp, but we
 It's unclear whether we lost the location, or if they left. 
 We decide that the expedition was a success anyway, and start our way back.
 <$Leader>Let's go. We have a long way home.
-<$Combat>Home ? Not even close.
+<$Talk>Home ? Not even close.
 ->Ellipse
