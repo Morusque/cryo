@@ -49,7 +49,7 @@ Who wants to eat ?
 +<Lazy>Me
 -
 ~kill("active",lastChoiceId)
-charName("active",lastChoiceId) eats the fruit and dies
+{charName("active",lastChoiceId)} eats the fruit and dies
 -> Back_to_the_room
 
 
