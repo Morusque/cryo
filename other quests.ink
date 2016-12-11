@@ -3,10 +3,11 @@
 // 1 knows that it's hard to grow something on this planet
 // 2 knows that plants are poisonous
 VAR cp_vegetation = 0
-// 1 knows that there are other creatures
-// 2 has heard a creature speak english
-// 3 knows the name of the creatures
-// 4 knows that the azoteans were a long time ago part of the affair that caused the holocaust
+// 1 knows that there is womething weith somewhere (on the map)
+// 2 knows that there are other creatures
+// 3 has heard a creature speak english
+// 4 knows the name of the creatures
+// 5 knows that the azoteans were a long time ago part of the affair that caused the holocaust
 VAR cp_azoteans = 0
 // 1 knows that there are other humans
 // 2 knows the location of the other humans

@@ -50,6 +50,7 @@ Who wants to eat ?
 -
 ~kill("active",lastChoiceId)
 {charName("active",lastChoiceId)} eats the fruits and dies
+~cp_vegetation = max(cp_vegetation,2)
 -> Back_to_the_room
 
 
@@ -57,6 +58,7 @@ Who wants to eat ?
 (...later...)
 <Survive>I've spent month growing fruits on a very large field and could only rip a few straws of grass... Better than nothing I suppose. But I'm starting to think this planet might not be the right choice as an alternative to earth...
 ~resources = resources + 1
+~cp_vegetation = max(cp_vegetation,1)
 -> Back_to_the_room
 
 

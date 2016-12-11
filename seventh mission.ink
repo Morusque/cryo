@@ -14,11 +14,11 @@ VAR decision = -1
 }
 <Combat>The order of mission said there was no form of life here.
 {
-    -cp_azoteans >= 1 :
-    <Combat>But in addition to fungus and plants, we've met a few creatures there.
     -cp_azoteans >= 2 :
+    <Combat>But in addition to fungus and plants, we've met a few creatures there.
+    -cp_azoteans >= 3 :
     <Combat>We can easily communicate with each other.
-    -cp_azoteans >= 4 :
+    -cp_azoteans >= 5 :
     <Combat>And since they were part of the mineral conflict years ago, it's safe to say the GOE knows about them.
 }
 <Talk>The mission orders described itself as the first human expedition on this planet.

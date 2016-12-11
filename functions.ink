@@ -40,3 +40,14 @@ EXTERNAL convertListId(listA, listB, id)
 == function convertListId(listA, listB, id)
 ~return -1
 
+== function min(a,b)
+{
+-a<b:~return a
+-else:~return b
+}
+
+== function max(a,b)
+{
+-a>b:~return a
+-else:~return b
+}
