@@ -8,7 +8,8 @@ INCLUDE seventh mission.ink
 INCLUDE eighth mission.ink
 
 EXTERNAL lifeCycle()
-EXTERNAL kill()
+EXTERNAL charName(list, id)
+EXTERNAL kill(list, id)
 
 VAR aliveCount = 6
 VAR year = 1
