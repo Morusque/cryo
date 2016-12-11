@@ -22,7 +22,7 @@
     -> Back_to_the_room
 + <Combat>That's not only water... I can hear something else, I can smell danger...[]Let me run through this corridor and throw another grenade !
     {charName("active",(lastChoiceId+1)%awakeCount)} dies.
-    ~kill("active",lastChoiceId)
+    ~kill("active",(lastChoiceId+1)%awakeCount)
     -> Check_awake -> Back_to_the_room
 + <Lazy>Ok, I'm still scared, please let me go back to the top.[]We all climb back to the surface. 
     ~knowledge ++

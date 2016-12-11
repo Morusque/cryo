@@ -27,7 +27,10 @@ What should we do ?
 <Combat>Yes we fight !
 <Leader>So whose side are we on ?
 +We're with the earth president
+    <Leader> Are you sure ?
+    <Combat> No, I changed my mind... We'll fight with the azoteans
 +We're with the azotean people
+
 -
 -> Back_to_the_room
 
