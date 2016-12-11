@@ -1,9 +1,37 @@
 
 === Mission_Talk_to_inhabitants ===
-<Leader>Let's go find those humans... Surely it will help us to understand what is going on here.
-We finally find the other humans. The top of their bodies is fully covered by a translucent and slimy lump that seems to be moving on its own. 
-They great us in english, but their voice is eerily muffled by their unusual headwear.
-A bit shaken by the encounter, we hesitate on the question to ask :
+{
+-cp_azoteans>=1:
+    <$Leader>Ok, let's set out on an expedition to find out {cp_inhabitants>=1:the truth about these other humans | more about these strange creatures}. 
+    {cp_inhabitants>=1:<$Lazy>If they even exist. These creatures may have played us.}
+    {cp_inhabitants>=1:<$Science>I'm sure they didn't. We need to clarify the whole situation here anyway. {cp_azoteans>=3:They didn't learn english by magic.}}
+-else:
+    <$Leader>Ok, let's set out on an expedition to find out more about this planet. 
+}
+After a year of stockpiling food and months of planification, we finally start the longest trip since we arrived on this planet.
+We walk relentlessly, establishing temporary camps every week.
+{
+    -resources>1:
+        Luckily, we were efficient enough in the previous years to travel quite comfortably. 
+        Rations are generous and we have all the tools necessary to handle unexpected events.
+    -else:
+        Sadly, we may have not been farsighted enough in the previous years to make this trip comfortable.
+        Rations are scarce and we have no tools for handling unexpected events.
+        Morale in the group is not optimal.
+}
+At the third month of expedition, we arrive in a lush area with densely packed flora.
+The progression gets slower.
+After a few days, we spot structures in the distance that look like small huts.
+{cp_inhabitants >=1: We believe we are getting close to finding the other humans.}
+As we get close, we see odd silhouettes walking towards us.
+{cp_inhabitants>=1:
+    It's the humans ! 
+-else :
+    It seem.. they are humans ! 
+}
+The top of their bodies is fully covered by a translucent and slimy lump that seems to be moving on its own. 
+They greet us in english, but their voice is eerily muffled by their unusual headwear.
+A bit shaken by the encounter, we exchange formalities, but then we hesitate on the questions to ask :
 
 +<Talk>Please, tell us everything you know.->Everything
 +<Science>How can you survive in such an azotic environment ?->AzoticEnvironment
@@ -79,6 +107,8 @@ HUMAN : Their people witnessed a long time ago the very worst of human deeds, a 
 HUMAN : Now the President is trying to silence them once and for all, by poisoning their atmosphere in secret.
 HUMAN :But he never consider that we would be able to communicate with the Azoteans and to understand the workings of all this.
 HUMAN : We played dead and they bought it. Now you're here and you're welcome to do the same.
+~cp_mission = max(cp_mission,3)
+~cp_inhabitants = max(cp_inhabitants,4)
 ->->
 
 =Symbiots
@@ -95,5 +125,6 @@ TODO ici expliquer a quoi sert vraiment le changement d atmosphere
 TODO le principe de symbiose
 
 = Back_to_the_room
+~cp_inhabitants = max(cp_inhabitants,3)
 <Leader>The night falls. It's time to head back to the room.
 ->Ellipse
