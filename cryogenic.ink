@@ -31,8 +31,9 @@ VAR secrets = 0
 <Leader>For now we'll have to carry masks and spend about half of our life frozen in the room.
 <Leader>Our first mission will be to analyze the soil and look for exploitable fields.
 <Leader>Then the second part of the mission will be to completely remove the azote from the air and fill it with oxygen. We brought the necessary equipment here with us for that task.
-<Leader>To last as long as possible, I'll only bring a few members of the crew.
-<Leader>All the others will have to stay cryopreserved for the next ten years.
+<Leader>To last as long as possible, we will take turns in the cryopods. Only a few of us will be on the field of operations at the same time.
+<Leader>We will do cryopod shifts every ten years.
+<Leader>So, who wants to be on the first one ?
 -> Cryopreservation
 
 
@@ -68,11 +69,11 @@ I'm never going outside alone !
 
 === Choix_mission ===
 <Leader>So what do we dow now ?
-*<Science>Look on the map, there is a gulf not far from there to the east, let's go and have a look.
+*<Science>{~Look on the map there is|Over there it seems there is|Have a look at the map there is} {~a gulf|a creek|a cliff} {~not far from there|close from the base|a few miles away} {~to the east|in the north|in the west}, let's go and have a look.
     -> Mission_Releves
-*<Survive>We really need to plant vegetables and gather food.
+*<Survive>{~We really need to|We should|It would be wise to} plant vegetables and gather food.
     -> Mission_Field
-*<Leader>I want to understand why we were sent on this particular planet.
+*<Leader>{~We should investigate|I want to understand|I want to know more about} why we were sent on this particular planet.
     -> Mission_Map
 +[]
     ->Mission_advanced
