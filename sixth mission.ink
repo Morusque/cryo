@@ -123,8 +123,6 @@ HUMAN : In exchange, we sustain them with carbon dioxyde and complex proteins th
 HUMAN : Symbioting is a long process but we feel it is the start of something that is bigger than all of us.
 HUMAN : It has the potential to offer a bright new future for mankind, where the survival of the specie is a peaceful reach for new forms of life.
 ->->
-TODO ici expliquer a quoi sert vraiment le changement d atmosphere
-TODO le principe de symbiose
 
 = Back_to_the_room
 ~cp_inhabitants = max(cp_inhabitants,3)

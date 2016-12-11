@@ -52,6 +52,23 @@ Capture azotean.
     -> Leave_Azotean_alone
 -> Back_to_the_room
 
+= Autopsy
+(...later...)
+The autopsy reveals a few things about the anatomy of this creature.
+Particularly about the lymphatic system.
+~cp_mission = max(cp_mission,1)
+<Science>This creatures is immune to many toxic substances present in this planet.
+<Science>Also its metabolism can convert azote to energy using a complex mechanism.
+<Science>It is very interesting and I'm pretty sur we could use it to our advantage here.
+<Survive>Amesome!
+<Science>Well... there is one drawback here.
+<Leader>What is it?
+<Science>The azote-filled air seems very convenient to those creatures.
+<Science>But if we clean the atmosphere and replace it with oxygen, that might kill their whole tribe at once...
+<Leader>Hmmm... I see.
+~knowledge=knowledge+1
+-> Back_to_the_room
+
 = Azotean_confidence
 <{charName("active",firstSpeaker)}>The creature told me many secrets.
 ~cp_azoteans = max(cp_azoteans,3)

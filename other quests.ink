@@ -36,10 +36,6 @@ VAR cp_mission = 0
 
 
 TODO put the following lines somewhere
-// 5 knows that if we fail there will be a next expedition
-~cp_inhabitants = max(cp_inhabitants,5)
-// 1 knows that changing the atmosphere will kill the azoteans
-~cp_mission = max(cp_mission,1)
 // 2 knows that this mission was a hidden plan from the government
 ~cp_mission = max(cp_mission,2)
 // 4 knows that there is a traitor
@@ -49,6 +45,8 @@ TODO put the following lines somewhere
 // 6 what was this conflict about ?
 ~cp_azoteans = max(cp_azoteans,6)
 
+
+TODO rajouter des choses qui modifiens les six variables decisives de fin de partie
 
 
 === Other_Quests ===
