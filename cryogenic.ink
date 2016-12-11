@@ -9,6 +9,7 @@ INCLUDE eighth mission.ink
 
 EXTERNAL lifeCycle()
 EXTERNAL kill(list, id)
+EXTERNAL charName(list, id)
 EXTERNAL stateOf(list, id)
 
 VAR aliveCount = 6
@@ -19,7 +20,7 @@ VAR awakeCount = 3
 VAR knowledge = 0
 VAR relations = 0
 VAR resources = 0
-VAR military = 0
+VAR military = 0 
 VAR secrets = 0
 
 
