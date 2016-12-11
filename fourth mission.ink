@@ -43,13 +43,30 @@ Capture azotean.
 +<Survive>Cook it!
     -> Kill_captive_Azotean
 +<Science>An autopsy!
-    -> Kill_captive_Azotean
+    -> Autopsy
 +<Combat>Train it to fight!
     -> Kill_captive_Azotean
 +<Talk>Let me deal with it![]<charId{lastChoiceId}> spends a lot of time alone with the creature. 
     -> Azotean_confidence
 +<Lazy>That was a mistake, let him free.
     -> Leave_Azotean_alone
+-> Back_to_the_room
+
+= Autopsy
+(...later...)
+The autopsy reveals a few things about the anatomy of this creature.
+Particularly about the lymphatic system.
+~cp_mission = max(cp_mission,1)
+<Science>This creatures is immune to many toxic substances present in this planet.
+<Science>Also its metabolism can convert azote to energy using a complex mechanism.
+<Science>It is very interesting and I'm pretty sur we could use it to our advantage here.
+<Survive>Amesome!
+<Science>Well... there is one drawback here.
+<Leader>What is it?
+<Science>The azote-filled air seems very convenient to those creatures.
+<Science>But if we clean the atmosphere and replace it with oxygen, that might kill their whole tribe at once...
+<Leader>Hmmm... I see.
+~knowledge=knowledge+1
 -> Back_to_the_room
 
 = Azotean_confidence
