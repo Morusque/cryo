@@ -43,7 +43,7 @@ Capture azotean.
 +<Survive>Cook it!
     -> Kill_captive_Azotean
 +<Science>An autopsy!
-    -> Kill_captive_Azotean
+    -> Autopsy
 +<Combat>Train it to fight!
     -> Kill_captive_Azotean
 +<Talk>Let me deal with it![]<charId{lastChoiceId}> spends a lot of time alone with the creature. 
