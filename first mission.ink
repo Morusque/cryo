@@ -21,8 +21,8 @@
     ~resources ++
     -> Back_to_the_room
 + <Combat>That's not only water... I can hear something else, I can smell danger...[]Let me run through this corridor and throw another grenade !
-    ++ charName("active",lastChoiceId) dies
     ~kill("active",lastChoiceId)
+    {charName("active",lastChoiceId)} dies.
     -> Check_awake -> Back_to_the_room
 + <Lazy>Ok, I'm still scared, please let me go back to the top.[]We all climb back to the surface. 
     ~knowledge ++
