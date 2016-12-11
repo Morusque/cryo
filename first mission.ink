@@ -4,6 +4,7 @@
 + <Science>Let's go there and take a few samples. -> fondDuGouffre
 + <Science>Let's record that noise and figure out what it is.[] It really sounds like underground water currents.
     ~knowledge ++
+    ~cp_water=max(cp_water,1)
     -> Back_to_the_room
 + <Talk>I'll shout loudly, I'm pretty sure somebody or something will answer.[] "Hello !"...
     ++Nobody answers-> Back_to_the_room
@@ -14,6 +15,7 @@
 
 = fondDuGouffre
 <Leader>We reach the bottom of the gulf. The noise was indeed water.
+~cp_water=max(cp_water,2)
 + <Science>Yay samples ![] We gather various interesting looking minerals for further examination.
     ~knowledge = knowledge + 2
     -> Back_to_the_room

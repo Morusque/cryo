@@ -1,9 +1,12 @@
 
+VAR firstSpeaker = 0
+
 === Mission_Observe_Azoteans ===
 We walk to the spot on the map...
 It turns out to be weird creatures!
 ~cp_azoteans = max(cp_azoteans,2)
 +<Talk>Let me approach them alone!
+    ~firstSpeaker = lastChoiceId
     -> Approach_Azotean_Alone
 +<Leader>Let's go and walk to them together.
     -> Approach_Azotean_Together
@@ -17,7 +20,7 @@ It turns out to be weird creatures!
     -> Leave_Azotean_alone
 
 = Approach_Azotean_Alone
-We let this person approach them alone.
+We let {charName("active",firstSpeaker)} approach them alone.
 -> Azotean_confidence
 
 = Approach_Azotean_Together
@@ -43,10 +46,9 @@ Capture azotean.
 -> Back_to_the_room
 
 = Azotean_confidence
-TODO whoever spoke
-<whoeverSpoke>The creature told me many secrets.
+<{charName("active",firstSpeaker)}>The creature told me many secrets.
 ~cp_azoteans = max(cp_azoteans,3)
-<whoeverSpoke>Is is an azoteans creature
+<{charName("active",firstSpeaker)}>Is is an azoteans creature
 ~cp_azoteans = max(cp_azoteans,4)
 -> Back_to_the_room
 
@@ -56,8 +58,20 @@ Leave azotean alone, you hear "thank you"
 -> Back_to_the_room
 
 = Kill_captive_Azotean
-    As we kill it, we hear it whisper "Please, no..."
-    ~cp_azoteans = max(cp_azoteans,3)
+We kill the azotean and try to cook it.
+~relations=relations-1
+Who wants to eat the azotean meat first?
++<Survive>Me
++<Science>Me
++<Leader>Me
++<Talk>Me
++<Combat>Me
++<Lazy>Me
+-
+~resources=resources+1
+{charName("active",lastChoiceId)} eats the meat.
+It seems to be an edible kind of animal.
+It's good to know we'll be able to hunt them for an additional supply if we run out of food.
 -> Back_to_the_room
 
 = Fight_Azotean
@@ -65,6 +79,11 @@ Fight !
 -> Back_to_the_room
 
 = Back_to_the_room
-TODO make it so that you may not have heard english yet
-<Leader>So... Do you really think these creatures speak english? How could that be.
+{
+    -cp_azoteans>=3 :
+    <Leader>So... Do you really think these creatures can speak english? How could that be.
+    <Science>Yes, we're so far from earth here, that makes no sense...
+}
+<Survive>One thing is bugging me though... our orders of mission mentionned fauna. 
+<Leader>True, i just said the planet was almost empty, that's probably a mistake or an undiscovered form of life... We'll have to investigate that later.
 ->Ellipse

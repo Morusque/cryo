@@ -46,6 +46,7 @@ We approach a group of creatures, talk to them, and learn many things.
 = War_history
 Not directly but we were chased by people from the earth because of...
 Apparently there are other humans there.
+~cp_inhabitants = max(cp_inhabitants,1)
 The creatures call them portmanteau for some reason!
 -> Back_to_the_room
 
@@ -53,6 +54,8 @@ The creatures call them portmanteau for some reason!
 = Inhabitants_Location
 <Azotean>The other humans live right there.
 (the creature shoes the location on your map)
+TODO they actually live very far away, change that
+~cp_inhabitants = max(cp_inhabitants,2)
 ~knowledge=knowledge+1
 -> Back_to_the_room
 
