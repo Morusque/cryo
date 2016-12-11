@@ -12,7 +12,8 @@ What do we ask.
 -
 -> Back_to_the_room
 
-TODO parler de holocauste
+TODO ici expliquer a quoi sert vraiment le changement d atmosphere
+TODO le principe de symbiose
 
 = Back_to_the_room
 <Leader>The night falls. It's time to head back to the room.

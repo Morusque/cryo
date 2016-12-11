@@ -20,8 +20,6 @@ What should we do ?
 -
 -> Back_to_the_room
 
-TODO expliquer a quoi sert vraiment le changement d atmosphere
-
 = Fight
 <Combat>We fight !
 <Leader>Ok, fine, we fight !

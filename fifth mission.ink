@@ -7,7 +7,7 @@ VAR wentAlone = 0
 +<Leader>Let's go together.
     -> Talk_to_Azoteans
 +<Talk>I can do the talk alone.
-    TODO wentAlone
+    wentAlone = lastChoiceId;
     -> Talk_to_Azoteans_Alone
 +<Survive>Should we move the room next to them ?
     -> Talk_to_Azoteans
@@ -16,8 +16,8 @@ VAR wentAlone = 0
 +<Lazy>Leave those guys alone.
     -> Back_to_the_room
 
-
 = Talk_to_Azoteans_Alone
+TODO use wentAlone variable
 (...Comes back)
 It's ok, you can all come now
 -> Talk_to_Azoteans
@@ -25,6 +25,7 @@ It's ok, you can all come now
 
 = Talk_to_Azoteans
 We learn many things.
+TODO parler de holocauste
 Apparently there are other humans there.
 They call them portmanteau!
 +<Talk>Where do they leave?
