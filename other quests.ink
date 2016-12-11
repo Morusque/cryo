@@ -35,18 +35,12 @@ VAR cp_mission = 0
 
 
 TODO put the following lines somewhere
-// 3 has talked with the humans
-~cp_inhabitants = max(cp_inhabitants,3)
-// 4 knows that the other human inhabitants are the previous science team
-~cp_inhabitants = max(cp_inhabitants,4)
 // 5 knows that if we fail there will be a next expedition
 ~cp_inhabitants = max(cp_inhabitants,5)
 // 1 knows that changing the atmosphere will kill the azoteans
 ~cp_mission = max(cp_mission,1)
 // 2 knows that this mission was a hidden plan from the government
 ~cp_mission = max(cp_mission,2)
-// 3 knows that the real goal of the GOE is to delete every witness from the holocaust
-~cp_mission = max(cp_mission,3)
 // 4 knows that there is a traitor
 ~cp_mission = max(cp_mission,4)
 // 5 knows who is the traitor
