@@ -128,7 +128,7 @@ I'm never going outside alone !
 ~return 
 
 
-== function ifOd(name)
+== function idOf(name)
 {
 - name=="Suzie":~return 0
 - name=="Ruth":~return 1
