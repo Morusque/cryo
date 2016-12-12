@@ -37,7 +37,7 @@ VAR secrets = 0
 <Leader>By then, if we succeed in our mission, this planet could become a second habitable earth with a brand new atmosphere.
 <Leader>For now we'll have to carry masks and spend about half of our life frozen in the room.
 <Leader>Our first mission will be to analyze the soil and look for exploitable fields.
-<Leader>Then the second part of the mission will be to completely remove the azote from the air and fill it with oxygen. We brought the necessary equipment here with us for that task.
+<Leader>Then the second part of the mission will be to completely remove the nitrogen from the air and fill it with oxygen. We brought the necessary equipment here with us for that task.
 <Leader>To last as long as possible, we will take turns in the cryopods. Only a few of us will be on the field of operations at the same time.
 <Leader>We will do cryopod shifts every ten years.
 <Leader>So, who wants to be on the first one ?
