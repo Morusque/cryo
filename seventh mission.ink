@@ -42,17 +42,17 @@ VAR decision = -1
 <Leader>The support ship will arrive in ten years...
 <Leader>What should we do ?
 +<Leader>Denounce the GOE.
-    ~decision = 0// sercets
+    ~decision = 0
 +<Talk>Try to find a good compromise.
-    ~decision = 1// relations
+    ~decision = 1
 +<Science>Convert the atmosphere.
-    ~decision = 2// knowledge
+    ~decision = 2
 +<Survive>Hide there and become symbiots.
-    ~decision = 3// resources
+    ~decision = 3
 +<Combat>Fight !
-    ~decision = 4// military
+    ~decision = 4
 +<Lazy>Nothing.
-    ~decision = 5// aliveCount
+    ~decision = 5
 -
 -> Back_to_the_room
 
