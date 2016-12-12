@@ -19,6 +19,8 @@ EXTERNAL convertListId(listA, listB, id)
 // newlyDead, dead, active, frozen, all, alive
 ~return 
 
+== function isActive(name)
+~return (convertListId("all","active",idOf(name))>=0)
 
 == function idOf(name)
 {
