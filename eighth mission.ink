@@ -3,8 +3,6 @@
 
 === Mission_Leave ===
 #loop:cryogénie 5
-The ship comes for us to go back...
-Check what happens...
 {
     - decision == 0 : -> Decision_0
     - decision == 1 : -> Decision_1
