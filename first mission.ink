@@ -4,6 +4,7 @@ VAR killedByGrenade = ""
 We pack the geologic tools and some rations, and head east, looking for the chasm.
 It's only a few hours before we reach the place. 
 We couldn't have missed it. The thing is huge.
+#image:Mission01-gouffre
 <$Science> Wow what a big scary hole! Can you hear the strange gargling sound coming from inside ?
 <$Combat> It almost seems something lives in there...
 - (chasmChoice)
@@ -63,7 +64,7 @@ We have done some more observations of the surroundings but a bad presentiment i
     We are very shaken by this dreadful accident. 
     This is not a good omen for the mission. However this is bigger than us, we need to stay focused and carry on.
 }
-<$Leader>The night falls.{not (killedByGrenade==""):...}It's time to head back to the room.{not (killedByGrenade==""):...}
+<Leader>The night falls.{not (killedByGrenade==""):...}It's time to head back to the room.{not (killedByGrenade==""):...}
 {not (killedByGrenade==""):
     <CharId{lastChoiceId}>...{killedByGrenade}....
 }
@@ -71,7 +72,7 @@ We have done some more observations of the surroundings but a bad presentiment i
 
 =Outro
 {gotSamples:The geological surveys make great data.}
-After this first expedition, we continue to do field observations on a weekly basis.
+After this first expedition, we continue to do field observations on a weekly basis.#image:TheRoom01
 We use the rest of the time for data analysis.
 After ten years we manage to have {gotSamples:good results|decent results}.
 ->Ellipse

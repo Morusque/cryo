@@ -1,9 +1,14 @@
 
 EXTERNAL lifeCycle()
 EXTERNAL charName(list,id)
+EXTERNAL charPronoun(list,id)
+EXTERNAL charPossessive(list,id)
+EXTERNAL charTraitor(list,id)
+EXTERNAL getTraitor(list)
 EXTERNAL kill(list, id)
 EXTERNAL stateOf(list, id)
 EXTERNAL convertListId(listA, listB, id)
+EXTERNAL count(list)
 
 
 == function lifeCycle()
@@ -14,6 +19,21 @@ EXTERNAL convertListId(listA, listB, id)
 // newlyDead, dead, active, frozen, all, alive
 ~return 0
 
+== function charPronoun(list, id)
+// newlyDead, dead, active, frozen, all, alive
+~return 0
+
+== function charPossessive(list, id)
+// newlyDead, dead, active, frozen, all, alive
+~return 0
+
+== function charTraitor(list, id)
+// newlyDead, dead, active, frozen, all, alive
+~return false
+
+== function getTraitor(list)
+// newlyDead, dead, active, frozen, all, alive
+~return -1
 
 == function kill(list, id)
 // newlyDead, dead, active, frozen, all, alive
@@ -42,6 +62,8 @@ EXTERNAL convertListId(listA, listB, id)
 == function convertListId(listA, listB, id)
 ~return -1
 
+==function count(list)
+~return 0
 
 == function min(a,b)
 {

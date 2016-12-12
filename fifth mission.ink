@@ -3,12 +3,19 @@ VAR wentAlone = 0
 
 
 === Mission_Talk_to_Azoteans ===
-TODO check what we know at this point about the creatures
-<Leader>So, if those creature really speak english, we need to talk with them. We sure have many things to lean from them.
+~temp creaturesName = "those creatures"
+{cp_azoteans>=4:
+    ~creaturesName = "the Azoteans"
+}
+{cp_azoteans>3:
+<Leader>So, if {creaturesName} really speak english, we need to talk with them. We sure have many things to learn from them.
+}
+#loop:cryogénie 3
+
 +<Leader>Let's go together.
     -> Talk_to_Azoteans
 +<Talk>I can do the talk alone.
-    wentAlone = lastChoiceId;
+    ~wentAlone = lastChoiceId
     -> Talk_to_Azoteans_Alone
 +<Survive>Should we move the room next to them ?
     -> Talk_to_Azoteans
@@ -19,6 +26,7 @@ TODO check what we know at this point about the creatures
 
 
 = Talk_to_Azoteans_Alone
+#image:Mission05-rencontre
 {charName("active",(wentAlone)%awakeCount)} goes and speaks with the creatures.
 +(...later...)
 -
@@ -30,13 +38,14 @@ It's ok, we can all come now.
 
 
 = Talk_to_Azoteans
+#image:Mission05-rencontre
 We approach a group of creatures, talk to them.
 <Azotean>Hello.
 TODO si on a na pas de bonnes relations avec les azoteens ici ils nous demandent de baisser les armes par prudence et on perd un point de military
 <Science>I was pretty sure this planet was empty.
-<Azotean>It used to be lifeless yes.
+<NameAzotean>It used to be lifeless yes.
 <Science>So how did you arrive there?
-<Azotean>We came from a distant planet but had to seek refuge here since the war...
+<NameAzotean>We came from a distant planet but had to seek refuge here since the war...
 ~cp_azoteans = max(cp_azoteans,5)
 +<Talk>[We'll be nice with you]From now on we'll consult you if we plan to make any change on this planet
     -> Nice_with_Azoteans
@@ -61,18 +70,18 @@ TODO si on a na pas de bonnes relations avec les azoteens ici ils nous demandent
     -> Back_to_the_room
 
 = War_history
-<Azotean>You should know! It was a war against people like you.
+<NameAzotean>You should know! It was a war against people like you.
 ~secrets=secrets+1
 <Combat>Really? You mean a war between you and people from the earth? When?
-<Azotean>More than a century ago.
+<NameAzotean>More than a century ago.
 <Combat>I've never heard of that war.
 <Leader>Me neither.
-<Azotean>I know, many things have been kept secret. The other humans we met had no clue either.
+<NameAzotean>I know, many things have been kept secret. The other humans we met had no clue either.
 <Survive>The other humans? Who are you talking about?
-<Azotean>I'm talking about the other crew that live here... I thought you knew.
+<NameAzotean>I'm talking about the other crew that live here... I thought you knew.
 <Leader>Who are those people? What do they look like?
-<Azotean>When we first met them, years ago, they looked pretty much exactly like you.
-<Azotean>I personnaly don't know much about them.
+<NameAzotean>When we first met them, years ago, they looked pretty much exactly like you.
+<NameAzotean>I personnaly don't know much about them.
 Apparently there are other humans there.
 ~cp_inhabitants = max(cp_inhabitants,1)
 -> Lack_of_oxygen
@@ -82,14 +91,14 @@ Apparently there are other humans there.
 {
 -cp_map==0:
 <Leader>Where do those humans live ?
-<Azotean>To that direction. You'll have to walk a long long way to reach their basement.
+<NameAzotean>To that direction. You'll have to walk a long long way to reach their basement.
 -cp_map>=1:
 <Leader>Do you think you could point the location where those humans live on our map ?
-<Azotean>Sure, let me see the map.
+<NameAzotean>Sure, let me see the map.
 The azotean looks at the map... He looks very confused.
-<Azotean>I'm sorry but the location is not on your map.
+<NameAzotean>I'm sorry but the location is not on your map.
 The azotean draws a mark on the sand, one meter away from the map, and points at it...
-<Azotean>It's there! Good luck.
+<NameAzotean>It's there! Good luck.
 ~knowledge=knowledge+1
 }
 ~cp_inhabitants = max(cp_inhabitants,2)
@@ -99,11 +108,12 @@ The azotean draws a mark on the sand, one meter away from the map, and points at
 
 = Nice_with_Azoteans
 ~relations=relations+1
-<Azotean>I hope you will.
+<NameAzotean>I hope you will.
 -> Lack_of_oxygen
 
 
 = Approach_Azoteans_with_weapons
+#image:Mission05-rencontre
 They are extremely scared, 
 TODO so history repeats again...
 ~relations=relations-1
@@ -136,7 +146,8 @@ TODO check if the following lines work
 
 
 = Back_to_the_room
-(...time passes...)
+#image:TheRoom01
+(...Time passes...)
 Producing oxygen in the rooms takes indeed a lot of time...
 And as time passes slowly, we're starting to be very impatient to head back outside.
 ->Ellipse

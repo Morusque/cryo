@@ -2,6 +2,7 @@
 // secrets, relations, knowledge, resources, military, aliveCount
 
 === Mission_Leave ===
+#loop:cryogénie 5
 The ship comes for us to go back...
 Check what happens...
 {
@@ -98,7 +99,7 @@ The Azoteans don't trust us and refuse to get in symbiosis with you.
 
 
 = Military_success
-We wait for the next resuce team and shoot their ship, then continue to live for years in the room.
+We wait for the next rescue team and shoot their ship, then continue to live for years in the room.
 ->END
 
 

@@ -4,15 +4,19 @@ VAR firstSpeaker = 0
 === Mission_Observe_Azoteans ===
 {
 -cp_map==0:
-One night, we hear strange noises outside
-It turns out to be weird angry creatures!
+Life goes on as we explore further and further from the room vicinity.
+One night, we hear strange noises outside.
+It turns out to be weird angry creatures!#image:Mission04-azoteans
 ~relations=relations-1
 -cp_map>=1:
-We walk to the spot on the map...
-It turns out to be weird creatures!
+We decide to walk towards the symbol on {charName("all",mapDesigner)}'s map...
+After a few days trip, we arrive in the designated area.
+It's not long before we spot something moving near a knarled redish tree.
+It turns out to be weird creatures !#image:Mission04-azoteans
 }
+#music:cryogénie 3
 ~cp_azoteans = max(cp_azoteans,2)
-+<Talk>Let me approach them alone!
++<Talk>Let me approach them alone !
     ~firstSpeaker = lastChoiceId
     -> Approach_Azotean_Alone
 +<Leader>Let's go and walk to them together.
@@ -28,17 +32,20 @@ It turns out to be weird creatures!
 
 = Approach_Azotean_Alone
 We let {charName("active",firstSpeaker)} approach them alone.
+He slowly builds confidence with one creature and manages to go near it.
+We dare not break this moment and leave him handle the situation.
+After a long hour spent with the creature, he comes back with exalted eyes.
 -> Azotean_confidence
 
 = Approach_Azotean_Together
-We approach and scare the azotean, they flee
+We approach and scare the slimy creatures, they flee.
 +<Combat>Let's chase them!
     -> Fight_Azotean
-+<Talk>Let me approach them alone!
++<Talk>Let me approach them alone !
     -> Approach_Azotean_Alone
 
 = Bring_Azotean_home
-Capture azotean.
+We capture one of the creatures.
 <Leader>So what do we do with it?
 +<Survive>Cook it!
     -> Kill_captive_Azotean
@@ -46,7 +53,7 @@ Capture azotean.
     -> Autopsy
 +<Combat>Train it to fight!
     -> Kill_captive_Azotean
-+<Talk>Let me deal with it![]<charId{lastChoiceId}> spends a lot of time alone with the creature. 
++<Talk>Let me deal with it ![]<charId{lastChoiceId}> spends a lot of time alone with the creature.
     -> Azotean_confidence
 +<Lazy>That was a mistake, let him free.
     -> Leave_Azotean_alone
@@ -70,14 +77,17 @@ Particularly about the lymphatic system.
 -> Back_to_the_room
 
 = Azotean_confidence
-<{charName("active",firstSpeaker)}>The creature told me many secrets.
+<CharId{firstSpeaker}>The creature told me many things.
 ~cp_azoteans = max(cp_azoteans,3)
-<{charName("active",firstSpeaker)}>Is is an azoteans creature
+<$Lazy>What on earth are you talking about ?
+<CharId{firstSpeaker}>The creature told me many things - in perfect english.
+<CharId{firstSpeaker}>They call themselves the 'Azoteans'.
+<$Science>You have to be kidding me...
 ~cp_azoteans = max(cp_azoteans,4)
 -> Back_to_the_room
 
 = Leave_Azotean_alone
-Leave azotean alone, you hear "thank you"
+We leave the azotean alone, and distinctively hear "thank you".
 ~cp_azoteans = max(cp_azoteans,3)
 -> Back_to_the_room
 
@@ -103,11 +113,13 @@ Fight !
 -> Back_to_the_room
 
 = Back_to_the_room
+We went back to the room, troubled by this unusual encounter.
+#image:TheRoom01
 {
     -cp_azoteans>=3 :
     <Leader>So... Do you really think these creatures can speak english? How could that be.
     <Science>Yes, we're so far from earth here, that makes no sense...
 }
-<Survive>One thing is bugging me though... our orders of mission mentionned fauna. 
-<Leader>True, i just said the planet was almost empty, that's probably a mistake or an undiscovered form of life... We'll have to investigate that later.
+<Survive>One thing is bugging me though... our orders of mission never mentionned fauna. 
+<$Leader>True, i just said the planet was almost empty, that's probably a mistake or an undiscovered form of life... We'll have to investigate that later.
 ->Ellipse

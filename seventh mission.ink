@@ -3,6 +3,7 @@ VAR decision = -1
 // secrets, relations, knowledge, resources, military, aliveCount
 
 === Mission_Decide ===
+#loop:cryogénie 7
 <Leader> I'm not sure what to think about this mission anymore.
 <Leader>Let's sum up the situation.
 <Survive>We're supposed to make this planet friendly within ten years.
@@ -41,17 +42,17 @@ VAR decision = -1
 <Leader>The support ship will arrive in ten years...
 <Leader>What should we do ?
 +<Leader>Denounce the GOE.
-    decision = 0// sercets
+    ~decision = 0// sercets
 +<Talk>Try to find a good compromise.
-    decision = 1// relations
+    ~decision = 1// relations
 +<Science>Convert the atmosphere.
-    decision = 2// knowledge
+    ~decision = 2// knowledge
 +<Survive>Hide there and become symbiots.
-    decision = 3// resources
+    ~decision = 3// resources
 +<Combat>Fight !
-    decision = 4// military
+    ~decision = 4// military
 +<Lazy>Nothing.
-    decision = 5// aliveCount
+    ~decision = 5// aliveCount
 -
 -> Back_to_the_room
 
@@ -69,5 +70,6 @@ VAR decision = -1
 -> Back_to_the_room
 
 = Back_to_the_room
+#image:TheRoom01
 <Leader>The night falls. It's time to head back to the room.
 ->Ellipse
