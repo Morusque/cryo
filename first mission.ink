@@ -19,6 +19,7 @@ We couldn't have missed it. The thing is huge.
     -> chasmChoice
     We spend an hour making observations in the surroundings of the chasm. 
 + <Combat>{isActive("Brandon"):I'll drop a grenade. Just in case.|I wouldn't risk a bad encounter. Let's throw some explosives in there}
+    --(firstGrenade)
     A big explosion reveals a large cave of rocks and running waterfalls.
     -> fondDuGouffre
 + <Survive>There must be water down there, let me go and grab a few bottles.[] 
@@ -39,7 +40,7 @@ We couldn't have missed it. The thing is huge.
 + <Survive>Water ! Let me grab some, we'll need it for sure.
     ~resources ++
     -> Back_to_the_room
-+ <Combat>That's not only water... I can hear something else, I can smell danger...[]{isActive("Brandon"):Let me run through this corridor and throw another grenade !}
++ <Combat>That's not only water... I can hear something else, I can smell danger...[]{isActive("Brandon"):Let me run through this corridor and throw {firstGrenade:another|a} grenade !}
     {not isActive("Brandon"):{charName("active",lastChoiceId)} throws a grenade in an obscure tunnel but the|The} grenade bounces randomly on the cave's walls.
     Screams, then an explosion.
     ~killedByGrenade = charName("active",(lastChoiceId+1) %awakeCount)

@@ -15,6 +15,7 @@ INCLUDE casual discussions.ink
 VAR aliveCount = 6
 VAR year = 1
 VAR lastChoiceId = -1
+VAR lastLineId = -1
 VAR missionNumber = 0
 
 VAR awakeCount = 3
