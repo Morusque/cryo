@@ -121,7 +121,7 @@ Sensing danger, we quickly take leave of the humans. We observe them from a safe
 <NameSymbiot>With our human lifestyle, surviving here would be impossible. But the Azoteans have a deep knowledge of life and metabolism, so they offered us a way to stay. 
 <NameSymbiot>The being that you see on top of us is a very special kind of azotic lichen.
 <NameSymbiot>It survives by associating with other species that can help him meet its metabolic needs.
-<NameSymbiot>They can hook themselves on our lymphatic and respiratory systems, transforming azote into fresh air and boosting our immune system.
+<NameSymbiot>They can hook themselves on our lymphatic and respiratory systems, transforming nitrogen into fresh air and boosting our immune system.
 <Science>Amazing.
 <NameSymbiot>In exchange, we sustain them with carbon dioxyde and complex proteins that they can't assimilate on their own.
 <NameSymbiot>Symbioting is a long process but we feel it is the start of something that is bigger than all of us.

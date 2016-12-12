@@ -65,12 +65,12 @@ The autopsy reveals a few things about the anatomy of this creature.
 Particularly about the lymphatic system.
 ~cp_mission = max(cp_mission,1)
 <Science>This creatures is immune to many toxic substances present in this planet.
-<Science>Also its metabolism can convert azote to energy using a complex mechanism.
+<Science>Also its metabolism can convert nitrogen to energy using a complex mechanism.
 <Science>It is very interesting and I'm pretty sur we could use it to our advantage here.
 <Survive>Amesome!
 <Science>Well... there is one drawback here.
 <Leader>What is it?
-<Science>The azote-filled air seems very convenient to those creatures.
+<Science>The nitrogen-filled air seems very convenient to those creatures.
 <Science>But if we clean the atmosphere and replace it with oxygen, that might kill their whole tribe at once...
 <Leader>Hmmm... I see.
 ~knowledge=knowledge+1
@@ -120,6 +120,6 @@ We went back to the room, troubled by this unusual encounter.
     <Leader>So... Do you really think these creatures can speak english? How could that be.
     <Science>Yes, we're so far from earth here, that makes no sense...
 }
-<Survive>One thing is bugging me though... our orders of mission never mentionned fauna. 
+<Survive>One thing is bugging me though... our orders of mission mentioned basic flora and fauna, I expected grass and bacterias, not ... this...
 <$Leader>True, i just said the planet was almost empty, that's probably a mistake or an undiscovered form of life... We'll have to investigate that later.
 ->Ellipse

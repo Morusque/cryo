@@ -77,7 +77,7 @@ We fail to find an agreement.
 
 
 = Knowledge_success
-As we leave the planet the azote has completely disappeared, it's only a matter of days before all azoteans disappear.
+As we leave the planet the nitrogen has completely disappeared, it's only a matter of days before all azoteans disappear.
 ->END
 
 
