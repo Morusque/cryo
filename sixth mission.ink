@@ -1,4 +1,7 @@
 
+TODO ajouter un point de military quelque part si les inhabitants acceptent de nous venir en aide un jour si besoin
+TODO permettre de gagner des points de relation ici ou dans la mission d avant  actuellement on en a 2 max et beaucoup d occasion d en perdre
+
 === Mission_Talk_to_inhabitants ===
 {
 -cp_azoteans>=1:

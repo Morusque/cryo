@@ -1,6 +1,7 @@
 
 VAR mapDesigner = -1
 
+TODO ajouter un point de resource si le Survive trouve quelque chose par hasard en faisant la map
 
 === Mission_Map ===
 <Leader>So...
