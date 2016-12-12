@@ -1,8 +1,6 @@
 
 VAR mapDesigner = -1
 
-TODO ajouter un point de resource si le Survive trouve quelque chose par hasard en faisant la map
-
 === Mission_Map ===
 <Leader>So...
 {
@@ -40,18 +38,30 @@ TODO ajouter un point de resource si le Survive trouve quelque chose par hasard 
 +<Science>I can do it, a map is good item to have for the report.
     -> Map_design
 +<Survive>I can do it, it could even be an occasion to find a better place for the room.
-    -> Map_design
+    -> Find_energy
 +<Combat>I can do it, I love running around.
     -> Map_design
 +{traitorId>-1}<CharId{traitorId}>We don't need a map.[]There's no need to question our mission or handle additional work, let's just proceed to the atmosphere thing and chill.
     -> Map_refuse
+
+= Find_energy
+~cp_map = max(cp_map,1)
+~mapDesigner = lastChoiceId
+{charName("active",mapDesigner)}
+{charName("active",mapDesigner)} travels the region up and down and starts charting the territory.
+<CharId{mapDesigner}>This territory turns out to be very hard for me to map.
+<CharId{mapDesigner}>The only interesting spot I found is this steam swamp.
+<CharId{mapDesigner}>I marked a spot on the map that I think could be used as a catalysis bath.
+<CharId{mapDesigner}>If we run out of energy someday we might want to move the room there...
+~resources = resources + 1
+-> Back_to_the_room
 
 
 = Map_design
 ~cp_map = max(cp_map,1)
 ~mapDesigner = lastChoiceId
 {charName("active",mapDesigner)} travels the region up and down and starts charting the territory.
-One day, on the fourth year of exploration he presents the first version of the map.
+One day, on the fourth year of exploration, the first version of the map is ready.
 <CharId{mapDesigner}>Here it is ! Behold the great Map, from the northen rift to the southern plains.
 ~knowledge = knowledge + 1
 -> Creatures_encounter
