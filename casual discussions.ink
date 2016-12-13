@@ -2,7 +2,7 @@
 TODO add those somewhere...
 
 === Next_expedition ===
-<Leader>What will happen if we never convert the azote from the atmosphere?
+*<Leader>What will happen if we never convert the nitrogen from the atmosphere?
 {
 -cp_inhabitants>=4:
     <Lazy>Well, I'm pretty sure a new expedition will come, and then another one...
@@ -14,11 +14,12 @@ TODO add those somewhere...
     ~secrets=secrets+1
     }
 -else:
-    <Lazy>Well...1 I don't know.
+    <Lazy>Well... I don't know.
     <Talk>You mean will we be sanctionned or something ?
-    <Lazy>Our lifes will really have been purposeless I suppose. That's a sufficient sanction to me.
+    <Lazy>Our lives will really have been purposeless I suppose. That's a sufficient sanction to me.
+    <Talk>Yep. We better put these 10 years to good use.
 }
-
+->Choix_mission.missionChoice
 
 
 === unplug_Box ===
@@ -33,9 +34,16 @@ TODO le traître a débranché l'un des scaphandres
 
 
 === Minerals ===
-TODO parler de pourquoi il y a eu l'holocauste à l'époque (on nous envoie trafiquer cette planète de la même manière qu'ils avaient envoyé il y a longtemps des équipes piller les minerais, ça a fait beaucoup de grabuge il paraît, etc...) if cp_azoteans=5 then cp_azoteans=5 et dans les deux cas secrets++
-// 6 what was this conflict about ?
-~cp_azoteans = max(cp_azoteans,6)
+{cp_azoteans>=5}*<Talk> This azotean holocauste, what was it about anyway ?
+    <Leader> I'm not sure but I heard a story -at the time I thought it was complotist rantings-..
+    <Leader> They say the GOE had sent teams plunder whole planetary systems for rare minerals.
+    <Leader> But they didn't expect that other forms of life were there.
+    <Leader> Some of them had the gut to fight back.
+    <Leader> So the GOE sent black ops orbital force to mess up the ecosystems of all their homeworlds.
+    <Talk> Damn...
+    <Leader> But we should get back to it I guess...
+    ~cp_azoteans = max(cp_azoteans,6)
+    ->Choix_mission.missionChoice
 
 
 === Earth_in_danger ===

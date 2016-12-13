@@ -9,7 +9,7 @@ EXTERNAL kill(list, id)
 EXTERNAL stateOf(list, id)
 EXTERNAL convertListId(listA, listB, id)
 EXTERNAL count(list)
-
+EXTERNAL skillScore(skill)
 
 == function lifeCycle()
 ~return 0
@@ -63,6 +63,9 @@ EXTERNAL count(list)
 ~return -1
 
 ==function count(list)
+~return 0
+
+==function skillScore(skill)
 ~return 0
 
 == function min(a,b)

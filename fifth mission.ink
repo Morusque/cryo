@@ -183,6 +183,6 @@ TODO check if the following lines work
 We traveled back to the room.
 #image:TheRoom01
 (...Time passes...)
-Producing oxygen in the rooms takes indeed a lot of time...
+Producing oxygen in the room takes indeed a lot of time...
 And as time passes slowly, we're starting to be very impatient to head back outside.
 ->Ellipse

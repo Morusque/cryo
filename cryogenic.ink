@@ -81,10 +81,12 @@ Mission log n°{missionNumber + 1}
 
 === Choix_mission ===
 ->Mission_intro->
+
 <$Leader>{~So|Alright|Ok} what {~{~should|do} we {~do|plan to do}|will be our plan|will be our objective} {now|{~now|this time}}?
 ~temp firstChoice = "{On the map there is a|There is this|We've been talking for a while about this} chasm {~not far from there|close from the base|a few miles away} to the east, {it's a good place for geologic surveys.|we can do the geologic surveys there.|we should go do the geologic surveys there.}"
 ~temp secondChoice = "{~We really need to|We should|It would be wise to} plant vegetables and gather food."
-~temp thirdChoice = "{~We should investigate|I want to understand|I want to know more about} why we were sent on this particular planet."
+~temp thirdChoice = "{~We should investigate|I want to understand|I want to know more about} why we were sent on this particular planet"
+-(missionChoice)
 *<Science>{firstChoice}
     -> Mission_Releves
 *<Survive>{secondChoice}
@@ -92,6 +94,9 @@ Mission log n°{missionNumber + 1}
 *{missionNumber>1}<Leader>{thirdChoice}
     -> Mission_Map
 +[]->Mission_advanced
+{missionNumber>2:<-Next_expedition}
+<-Minerals
+
 
 ===Mission_intro===
 {
