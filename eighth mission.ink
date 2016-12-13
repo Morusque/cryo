@@ -52,7 +52,7 @@
 = Decision_5
     {
         - aliveCount >= 5 : -> AliveCount_Success
-        - else : -> AliveCount_Success
+        - else : -> AliveCount_fail
     }
 
 
@@ -129,13 +129,24 @@ For some reason the government know about our plans, one day a missile arrives a
 
 
 = AliveCount_Success
-Unfortunately most of us are dead when the rescue ship arrives.
+(... later ...)
+This is the end of this mission report.
+I'm writing it from the eath, on which we returned safely.
+I'll now close this file and try to pretend none of this ever happened.
+We've decided to forget about all this story to live a happy life here on earth.
 ->END
 
 
-= AliveCount_Fail
-We decide to forget about all this story, we return to earth and live a happy life.
+= AliveCount_fail
+(... later ...)
+This is the end of this mission report.
+Most of us are dead now. And the others aren't in a very good shape.
+The rescue ship will probably arrive is time to find this file.
+But even if I'm still alive by then, I don't think I could make it all the way back.
+Although I don't regret this mission...
+I wish I could see the earth just one more time.
 ->The_end
+
 
 === The_end ===
 THE END
