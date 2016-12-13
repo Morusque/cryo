@@ -16,35 +16,35 @@
 
 = Decision_0
     {
-        - secrets >= 2 : -> Secrets_success
+        - secrets >= 1 : -> Secrets_success
         - else : -> Secrets_fail
     }
 
 
 = Decision_1
     {
-        - relations >= 2 : -> Relations_success
+        - relations >= 1 : -> Relations_success
         - else : -> Relations_fail
     }
 
 
 = Decision_2
     {
-        - knowledge >= 2 : -> Knowledge_success
+        - knowledge >= 5 : -> Knowledge_success
         - else : -> Knowledge_fail
     }
 
 
 = Decision_3
     {
-        - resources >= 2 : -> Resources_success
+        - resources >= 3 : -> Resources_success
         - else : -> Resources_fail
     }
 
 
 = Decision_4
     {
-        - military >= 2 : -> Military_success
+        - military >= 1 : -> Military_success
         - else : -> Military_fail
     }
 

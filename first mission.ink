@@ -10,7 +10,7 @@ We couldn't have missed it. The thing is huge.
 - (chasmChoice)
 + <Science>Let's go there and take a few samples. -> fondDuGouffre
 + <Science>Let's record that noise and figure out what it is.[] It really sounds like underground water currents.
-    ~knowledge ++
+    ~knowledge = knowledge + 1
     ~cp_water=max(cp_water,1)
     -> Back_to_the_room
 * <Talk>I'll shout loudly, if there's someone they will answer.[]
@@ -22,6 +22,8 @@ We couldn't have missed it. The thing is huge.
 + <Combat>{isActive("Brandon"):I'll drop a grenade. Just in case.|I wouldn't risk a bad encounter. Let's throw some explosives in there}
     --(firstGrenade)
     A big explosion reveals a large cave of rocks and running waterfalls.
+    ~relations = relations - 1
+    ~military = military + 1 
     -> fondDuGouffre
 + <Survive>There must be water down there, let me go and grab a few bottles.[] 
     The whole group follows.
@@ -39,7 +41,7 @@ We couldn't have missed it. The thing is huge.
     ~knowledge = knowledge + 2
     -> Back_to_the_room
 + <Survive>Water ! Let me grab some, we'll need it for sure.
-    ~resources ++
+    ~resources = resources + 1
     -> Back_to_the_room
 + <Combat>That's not only water... I can hear something else, I can smell danger...[]{isActive("Brandon"):Let me run through this corridor and throw {firstGrenade:another|a} grenade !}
     {not isActive("Brandon"):{charName("active",lastChoiceId)} throws a grenade in an obscure tunnel but the|The} grenade bounces randomly on the cave's walls.
@@ -51,7 +53,7 @@ We couldn't have missed it. The thing is huge.
     -> Check_awake -> Back_to_the_room
 + <Lazy>Ok, I'm actually very scared, please let me go back to the top.[]
     We all climb back to the surface.
-    ~knowledge ++
+    ~knowledge = knowledge + 1
     -> Scared
 
 =Scared

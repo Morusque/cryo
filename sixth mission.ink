@@ -63,6 +63,7 @@ One of the humans steps forward and speaks :
 <CharId{lastChoiceId}>Wow. That was something.
 We are completely stunned by the amount of information.
 After spending a few hours with them we head back to our temporary camp, our head full with new questions.
+~relations=relations+2
 -> Back_to_the_room
 
 = AzoticEnvironment
@@ -71,6 +72,7 @@ After spending a few hours with them we head back to our temporary camp, our hea
 <CharId{lastChoiceId+1}>Wow that was intense.
 <CharId{lastChoiceId}> Don't listen to him. This was probably the most enlightening moment of my life. Thank you very much.
 We are stunned by the human's speech. After spending the evening with them, we decide to head back to our temporary camp, our head full with new perspectives.
+~relations=relations+1
 -> Back_to_the_room
 
 = WhereDoYouComeFrom
@@ -79,6 +81,7 @@ We are stunned by the human's speech. After spending the evening with them, we d
 <CharId{lastChoiceId+1}> Wow...
 <CharId{lastChoiceId}> That was one hell of a story. Thank you. We have a lot to think on now.
 We are baffled by the revelations, and head back to the room while trying to make sense of the recent events.
+~relations=relations+1
 -> Back_to_the_room
 
 = KindOfWeapon
@@ -91,11 +94,19 @@ The humans burst into a frank laugh.
 <$Science>You mean that was the most enlightening I ever heard.
 <$Combat>I'm still having a hard time trusting guys that wear space blobs as hats.
 <$Science>Please just keep quiet.
+{
+    -isActive("Brandon"):
+    <Combat>Would you assist us if we are in danger one day for any reason ?
+    <NameSymbiot>I'm not sure what kind of assistance you have in mind, but why not.
+    ~military=military+1
+}
 We are a bit reassured by the human's speech. However we still aren't totally comfortable with them and after a few hours we make our way back to the temporary camp.
+~relations=relations+1
 -> Back_to_the_room
 
 = Nothing
 Sensing danger, we quickly take leave of the humans. We observe them from a safe distance for a few hours, then head back to our temporary camp.
+~relations=relations-1
 -> Back_to_the_room
 
 = HumansStory
