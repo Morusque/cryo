@@ -98,12 +98,23 @@ We fail to convert the atmosphere of the planet, another team will try.
 
 
 = Resources_success
-We become symbiots with the Azoteans.
+(... later ...)
+I'm now writing the very last lines of this mission report.
+I intend to hand it to the rescue ship leader, and announce that we've all decided to stay here.
+We don't want to go back to earth.
+The Azoteans have agreed to become symbiots with us so we could stay here until our death.
 ->END
 
 
 = Resources_fail
-The Azoteans don't trust us and refuse to get in symbiosis with you.
+(... later ...)
+I'm close to the end of this mission report.
+I now have no idea what to do.
+We're now all too afraid of the GOE to go back to earth.
+But we lack resources to stay here.
+The atmosphere plan failed.
+And sadly the Azoteans have refused to get in symbiosis with us.
+No matter what happens now, we'll all likely die here within the next few years.
 ->END
 
 
