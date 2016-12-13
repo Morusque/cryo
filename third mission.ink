@@ -56,7 +56,6 @@ VAR mapDesigner = -1
 ~resources = resources + 1
 -> Back_to_the_room
 
-
 = Map_design
 ~cp_map = max(cp_map,1)
 ~mapDesigner = lastChoiceId
@@ -65,7 +64,6 @@ One day, on the fourth year of exploration, the first version of the map is read
 <CharId{mapDesigner}>Here it is ! Behold the great Map, from the northen rift to the southern plains.
 ~knowledge = knowledge + 1
 -> Creatures_encounter
-
 
 = Map_refuse
 <CharId{mapLeader}>Ok, no map then...
@@ -81,13 +79,11 @@ One day, on the fourth year of exploration, the first version of the map is read
 -
 -> Back_to_the_room
 
-
 = Creatures_encounter
 <CharId{mapDesigner+1}>Wonderful {charName("active",mapDesigner)} ! But what is this symbol on the map ?
 <CharId{mapDesigner}> Oh right ! It's something really strange I found a few days ago... I'm not even sure of what I saw, we really need to go back there on a next mission to analyze it properly.
 ~cp_azoteans = max(cp_azoteans,1)
 -> Back_to_the_room
-
 
 = Back_to_the_room
 #image:TheRoom01
