@@ -35,9 +35,6 @@ VAR cp_inhabitants = 0
 VAR cp_mission = 0
 
 
-TODO rajouter plus de changements des variables de réussite/echecs et équilibrer le check final
-
-
 === Other_Quests ===
 
 TODO un enfant ?
