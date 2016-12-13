@@ -78,12 +78,16 @@ I guess all these secrets will stay in our memories and, someday, disappear with
 
 
 = Relations_success
-We try to reason both Azoteans and earth politicians that they could forgive each other and live in peace.
+(... later ...)
+We will try to reason both Azoteans and earth politicians that they could forgive each other and live in peace.
+End of report.
 ->END
 
 
 = Relations_fail
-We fail to find an agreement.
+(... later ...)
+We failed to find an agreement.
+End of report.
 ->END
 
 
