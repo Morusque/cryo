@@ -86,7 +86,7 @@ One day, on the fourth year of exploration, the first version of the map is read
 -> Back_to_the_room
 
 = Back_to_the_room
-#image:TheRoom01
+#image:00_room
 <CharId{mapLeader}>After all this is really a crappy planet. There has to be a better one.
 <CharId{mapScientist}>I've actually studied the {idOf("Ruth")==convertListId("all","active",mapScientist):spectral composition of the} planets around here and at least two of them, CLX-23 or UVA-54, seems to be really good candidates... Nothing prevents us to go there. What do you think about leaving this place and start again elsewhere ?
 <$Lazy>Sorry but we have to stick to the orders.

@@ -3,6 +3,7 @@ VAR locationChooserId = -1
 VAR planterId = -1
 VAR plantkillerId = -1
 === Mission_Field ===
+#image:Mission00_exterieur
 ~planterId = lastChoiceId
 As we start making plans to cultivate this new land, we decide where to start :
 +<Science>{isActive("Ruth"):I need to|We should} test the soils first and find the best place.
@@ -116,6 +117,6 @@ After two years, the trees turn out to be extremely strange and poisonous.
 
 = Back_to_the_room
 <Leader>That was definitely not a success. I guess we'll not be able to rely on agriculture if we expect to make this planet profitable.
-#image:TheRoom01
+#image:00_room
 ->Ellipse
 

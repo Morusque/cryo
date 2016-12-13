@@ -3,6 +3,7 @@ VAR wentAlone = 0
 
 
 === Mission_Talk_to_Azoteans ===
+#image:Mission00_exterieur
 ~temp creaturesName = "creatures"
 {cp_azoteans>=4:
     ~creaturesName = "Azoteans"
@@ -26,9 +27,11 @@ As we arrive close to their location we decide how to proceed.
     <$Leader>Why not. But let's make contact first.
     We approach a group of {creaturesName}{cp_azoteans>3:, talk to them}.
     -> Talk_to_Azoteans
-+<Combat>Ok... But let's bring some weapons.
++<Combat>Let's bring some weaponry. Just in case.
     -> Approach_Azoteans_with_weapons
-+<Lazy>Leave those guys alone.[]For some reason we shortly went back to the room.
++<Lazy>Leave those guys alone.[]
+    <$Leader>Ok, fine.
+    For some reason we shortly went back to the room.
     -> Back_to_the_room
 
 
@@ -180,7 +183,7 @@ Many questions ran through our heads.
 
 = Back_to_the_room
 We traveled back to the room.
-#image:TheRoom01
+#image:00_room
 (...Time passes...)
 Producing oxygen in the room takes indeed a lot of time...
 And as time passes slowly, we're starting to be very impatient to head back outside.

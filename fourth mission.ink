@@ -2,6 +2,7 @@
 VAR firstSpeaker = 0
 
 === Mission_Observe_Azoteans ===
+#image:Mission00_exterieur
 {
 -cp_map==0:
 Life goes on as we explore further and further from the room vicinity.
@@ -17,7 +18,6 @@ It turns out to be weird creatures !#image:Mission04-azoteans
 #music:cryogénie 3
 ~cp_azoteans = max(cp_azoteans,2)
 +<Talk>Let me approach them alone !
-    ~firstSpeaker = lastChoiceId
     -> Approach_Azotean_Alone
 +<Leader>Let's go and walk to them together.
     -> Approach_Azotean_Together
@@ -31,10 +31,11 @@ It turns out to be weird creatures !#image:Mission04-azoteans
     -> Leave_Azotean_alone
 
 = Approach_Azotean_Alone
+~firstSpeaker = lastChoiceId
 We let {charName("active",firstSpeaker)} approach them alone.
-He slowly builds confidence with one creature and manages to go near it.
-We dare not break this moment and leave him handle the situation.
-After a long hour spent with the creature, he comes back with exalted eyes.
+It seems {charPronoun("active",firstSpeaker)} slowly builds confidence with one creature and manages to go near it.
+We dare not break this moment and let the situation unfold.
+After a long hour spent with the creature, {charPronoun("active",firstSpeaker)} comes back with exalted eyes.
 -> Azotean_confidence
 
 = Approach_Azotean_Together
@@ -87,14 +88,14 @@ Particularly about the lymphatic system.
 -> Back_to_the_room
 
 = Leave_Azotean_alone
-We leave the azotean alone, and distinctively hear "thank you".
+We leave the creature alone, and distinctively hear "thank you".
 ~cp_azoteans = max(cp_azoteans,3)
 -> Back_to_the_room
 
 = Kill_captive_Azotean
-We kill the azotean and try to cook it.
+We kill the creature and try to cook it.
 ~relations=relations-1
-Who wants to eat the azotean meat first?
+Who wants to eat the meat first?
 +<Survive>Me
 +<Science>Me
 +<Leader>Me
@@ -114,7 +115,7 @@ Fight !
 
 = Back_to_the_room
 We went back to the room, troubled by this unusual encounter.
-#image:TheRoom01
+#image:00_room
 {
     -cp_azoteans>=3 :
     <Leader>So... Do you really think these creatures can speak english? How could that be.

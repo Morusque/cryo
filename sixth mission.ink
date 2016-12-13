@@ -9,6 +9,7 @@
     <$Leader>Ok, let's set out on an expedition to find out more about this planet. 
 }
 #loop:cryogénie 3
+#image:Mission00_exterieur
 After a year of stockpiling food and months of planification, we finally start the longest trip since we arrived on this planet.
 We walk relentlessly, establishing temporary camps every week.
 {
@@ -20,7 +21,7 @@ We walk relentlessly, establishing temporary camps every week.
         Rations are scarce and we have no tools for handling unexpected events.
         Morale in the group is not optimal.
 }
-At the third month of expedition, we arrive in a lush area with densely packed flora.
+At the third month of expedition, we arrive in a lush area with densely packed flora.#image:Mission06-symbiote
 The progression gets slower.
 After a few days, we spot structures in the distance that look like small huts.
 {cp_inhabitants >=1: We believe we are getting close to finding the other humans.}
@@ -137,7 +138,7 @@ Sensing danger, we quickly take leave of the humans. We observe them from a safe
 ->->
 
 = Back_to_the_room
-#image:TheRoom01
+#image:00_room
 ~cp_inhabitants = max(cp_inhabitants,3)
 The next day, a terrible storm rages and we are unable to leave the camp.
 When the storm finally calms down, we try to go back to the humans' camp, but we turn in circles without seeing any huts.

@@ -2,6 +2,7 @@
 // secrets, relations, knowledge, resources, military, aliveCount
 
 === Mission_Leave ===
+#image:Mission08_exterieur
 #loop:cryogénie 5
 {
     - decision == 0 : -> Decision_0
@@ -64,7 +65,7 @@ We've explained in detail why we refused to obey our orders.
 All the secrets about our mission will be revealed.
 I'm confident this report contains enough to launch a claim against the president.
 The politics of the GOE will likely change forever, thanks to us.
-->END
+->The_end
 
 
 = Secrets_fail
@@ -74,21 +75,21 @@ I'm writing the very last lines of our mission report and lifetime story.
 Sadly, I know most of it will never leave our lab, and we'll have to remain silent.
 The justice on earth has become even weirder and we failed to gather enough evidence against the GOE.
 I guess all these secrets will stay in our memories and, someday, disappear with us.
-->END
+->The_end
 
 
 = Relations_success
 (... later ...)
 We will try to reason both Azoteans and earth politicians that they could forgive each other and live in peace.
 End of report.
-->END
+->The_end
 
 
 = Relations_fail
 (... later ...)
 We failed to find an agreement.
 End of report.
-->END
+->The_end
 
 
 = Knowledge_success
@@ -102,7 +103,7 @@ Or did we ?
 Was this really useful or just a pretext? 
 What's the GOE's plan from now? Will the people from the earth actually travel to this place and live here?
 I guess I'll never grow old enough to know, but if I come to die soon my last wish for this place would be to become new peaceful home for all humans.
-->END
+->The_end
 
 
 = Knowledge_fail
@@ -115,7 +116,7 @@ Still we know other teams will come and waste their lifes on this endless projec
 The GOE will continue to waste his money on it.
 We came here with a hope for the people of the earth.
 But I guess the GOE doesn't care either about human life after all.
-->END
+->The_end
 
 
 = Resources_success
@@ -124,7 +125,7 @@ I'm now writing the very last lines of this mission report.
 I intend to hand it to the rescue ship leader, and announce that we've all decided to stay here.
 We don't want to go back to earth.
 The Azoteans have agreed to become symbiots with us so we could stay here until our death.
-->END
+->The_end
 
 
 = Resources_fail
@@ -136,7 +137,7 @@ But we lack resources to stay here.
 The atmosphere plan failed.
 And sadly the Azoteans have refused to get in symbiosis with us.
 No matter what happens now, we'll all likely die here within the next few years.
-->END
+->The_end
 
 
 = Military_success
@@ -146,7 +147,7 @@ I only write it to get my head rid of this mission.
 I'll never hand out the report. Just keep it here as a proof of the GOE's actions.
 We now wait for the next rescue team.
 When they arrive, we'll simply shoot their ship, then continue to live for years in the room.
-->END
+->The_end
 
 
 = Military_fail
@@ -160,7 +161,7 @@ It's scheduled to crash right here whithin the next ten years.
 I know it will not directly destroy us, only poison the atmosphere once for good.
 And once again the GOE will not be accused. They'll find a way to hide their reasons, I'm sure...
 I don't know about the Azoteans but we humans are sure doomed.
-->END
+->The_end
 
 
 = AliveCount_Success
@@ -169,7 +170,7 @@ This is the end of this mission report.
 I'm writing it from the eath, on which we returned safely.
 I'll now close this file and try to pretend none of this ever happened.
 We've decided to forget about all this story to live a happy life here on earth.
-->END
+->The_end
 
 
 = AliveCount_fail
@@ -184,6 +185,18 @@ I wish I could see the earth just one more time.
 
 
 === The_end ===
+#loop:cryogénie 1
+#image:
 THE END
+...
+Are you still there ?
+<teamRuth>Well by the way...
+<teamRuth>The team is 4 people
+<teamValet>The art is by William David
+<teamLucien>The music is by Anne Laplantine
+<teamBrandon>And the design and story are by Morusque and Clément Duquesne
+<nameAzotean>And we used the open source language Ink by Inkle as a narrative scripting tool
+<nameSymbiot>That's it folks. You can go now. Or replay.
+.
 ->END
 // end of ending part

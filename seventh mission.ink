@@ -3,7 +3,9 @@ VAR decision = -1
 // secrets, relations, knowledge, resources, military, aliveCount
 
 === Mission_Decide ===
-We sit around the table, trying to get our heads clear.
+We have discussed a lot about the recent events, but we all have different views.
+We decide to write detailed reports of everything we know.
+Then we sit around the table, trying to get our heads clear.
 #loop:cryogénie 7
 <Leader> I'm not sure what to think about this mission anymore.
 <Leader>Let's sum up the situation.
@@ -71,6 +73,6 @@ We sit around the table, trying to get our heads clear.
 -> Back_to_the_room
 
 = Back_to_the_room
-#image:TheRoom01
-<Leader>The night falls. It's time to head back to the room.
+#image:00_room
+<Leader>Okay. It is said then. Now we should prepare to assume the consequences of our actions.
 ->Ellipse

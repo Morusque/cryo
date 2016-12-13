@@ -30,7 +30,8 @@ VAR secrets = 0
 
 
 === Introduction ===
-#image:TheRoom01
+#image:00_room
+#loop:hum
 <Leader>Captain Madeleine speaking.
 <Leader>After a long journey, here we are, on this unfriendly azotic planet.
 <Leader>The ship that will take us home is scheduled in 80 years. 
@@ -49,6 +50,8 @@ VAR secrets = 0
 +[<Cryo>Cryo]
 -
 -> Check_awake ->
+-> Number_Of_People ->
+
 {
 - awakeCount == 1 : 
 <Leader>{I shouldn't go out there alone..|No way I go through this cycle alone ...|I won't make it through alone...}{~it's too dangerous !|imagine if something happens to me !|it's not safe at all !|it's neither safe nor efficient !}
@@ -63,6 +66,16 @@ Mission log n°{missionNumber + 1}
 -> Choix_mission
 }
 
+=== Number_Of_People ===
+{
+- awakeCount >3 :
+    <Leader> Ok we're almost all awake, our combined talents should allow us to handle any kind of situation.
+    {missionNumber<6:<Science> However, we can't afford to be that many everytime...Or we will die of old age before this mission is over.}
+- awakeCount == 2:
+    <Leader> Just the two of us then.
+    <$Talk> Yup.
+}
+->->
 
 === Check_awake ===
 {
@@ -81,7 +94,6 @@ Mission log n°{missionNumber + 1}
 
 === Choix_mission ===
 ->Mission_intro->
-
 <$Leader>{~So|Alright|Ok} what {~{~should|do} we {~do|plan to do}|will be our plan|will be our objective} {now|{~now|this time}}?
 ~temp firstChoice = "{On the map there is a|There is this|We've been talking for a while about this} chasm {~not far from there|close from the base|a few miles away} to the east, {it's a good place for geologic surveys.|we can do the geologic surveys there.|we should go do the geologic surveys there.}"
 ~temp secondChoice = "{~We really need to|We should|It would be wise to} plant vegetables and gather food."
@@ -95,12 +107,14 @@ Mission log n°{missionNumber + 1}
     -> Mission_Map
 +[]->Mission_advanced
 {missionNumber>2:<-Next_expedition}
-<-Minerals
+//<-Minerals
 
 
 ===Mission_intro===
 {
     -missionNumber==0:
+        #stop:2.0
+        #image:Mission00_exterieur
         After spending the first months setting up the camp and taking our bearings, we finally get ready to engage in the first step of our mission.
         #loop:cryogénie 1
     -missionNumber==1:
@@ -125,7 +139,7 @@ Mission log n°{missionNumber + 1}
 }
 *{Mission_Observe_Azoteans}<Leader>Let's go back to these creatures.
     -> Mission_Talk_to_Azoteans
-*{Mission_Talk_to_Azoteans}<Leader>The previous expedition...
+*{Mission_Talk_to_Azoteans}<Leader>We shoud continue exploring...
     -> Mission_Talk_to_inhabitants
 *{Mission_Talk_to_inhabitants}<Leader>We should decide what to do with all the new information...
     -> Mission_Decide

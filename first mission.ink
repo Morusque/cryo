@@ -1,6 +1,7 @@
 VAR killedByGrenade = ""
 === Mission_Releves ===
 ~temp gotSamples = false
+#image:Mission00_exterieur
 We pack the geologic tools and some rations, and head east, looking for the chasm.
 It's only a few hours before we reach the place. 
 We couldn't have missed it. The thing is huge.
@@ -74,7 +75,7 @@ We have done some more observations of the surroundings but a bad presentiment i
 
 =Outro
 {gotSamples:The geological surveys make great data.}
-After this first expedition, we continue to do field observations on a weekly basis.#image:TheRoom01
+After this first expedition, we continue to do field observations on a weekly basis.#image:00_room
 We use the rest of the time for data analysis.
 After ten years we manage to have {gotSamples:good results|decent results}.
 ->Ellipse
