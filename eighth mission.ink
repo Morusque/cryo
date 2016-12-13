@@ -136,12 +136,26 @@ No matter what happens now, we'll all likely die here within the next few years.
 
 
 = Military_success
-We wait for the next rescue team and shoot their ship, then continue to live for years in the room.
+(... later ...)
+This is the end of the report.
+I only write it to get my head rid of this mission.
+I'll never hand out the report. Just keep it here as a proof of the GOE's actions.
+We now wait for the next rescue team.
+When they arrive, we'll simply shoot their ship, then continue to live for years in the room.
 ->END
 
 
 = Military_fail
-For some reason the government know about our plans, one day a missile arrives and destroys the room, we are now dommed.
+(... later ...)
+This is the last lines of this report and possibly the last hours of our lifes.
+Apparently for some reason the government knows about our plans.
+We've received a long-distance message from the GOE.
+They know we know and they don't want anybody else to know.
+A chemical missile is currently directed from the earth to here.
+It's scheduled to crash right here whithin the next ten years.
+I know it will not directly destroy us, only poison the atmosphere once for good.
+And once again the GOE will not be accused. They'll find a way to hide their reasons, I'm sure...
+I don't know about the Azoteans but we humans are sure doomed.
 ->END
 
 
