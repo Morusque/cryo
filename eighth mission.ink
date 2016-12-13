@@ -88,12 +88,29 @@ We fail to find an agreement.
 
 
 = Knowledge_success
-As we leave the planet the nitrogen has completely disappeared, it's only a matter of days before all azoteans disappear.
+(... later ...)
+As a conclusion of the report, I can say we successfully converted the planet to a new one where humans could live.
+I'm actually writing those lines from outside the room, without my helmet.
+The nitrogen has completely disappeared, it's only a matter of days before all azoteans disappear.
+This mission leaves me a bitter taste.
+We've dedicated our whole life and sacrificed a whole specie just for our own confort...
+Or did we ?
+Was this really useful or just a pretext? 
+What's the GOE's plan from now? Will the people from the earth actually travel to this place and live here?
+I guess I'll never grow old enough to know, but if I come to die soon my last wish for this place would be to become new peaceful home for all humans.
 ->END
 
 
 = Knowledge_fail
-We fail to convert the atmosphere of the planet, another team will try.
+(... later ...)
+As a conclusion of the report, we will say this mission leaves us a strange impression.
+We failed to convert the atmosphere of the planet.
+We came to the conclusion that it's probably not possible.
+We know that there was a previous team and that they probably came to the same conclusion.
+Still we know other teams will come and waste their lifes on this endless project.
+The GOE will continue to waste his money on it.
+We came here with a hope for the people of the earth.
+But I guess the GOE doesn't care either about human life after all.
 ->END
 
 
