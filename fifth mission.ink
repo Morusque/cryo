@@ -145,7 +145,7 @@ They are extremely scared, and start shrieking in a shrill voice.
     We slowly realize that they are trying to communicate with us...
     ... and in the language of Shakespeare !
 }
-~cp_azoteans=3
+~cp_azoteans = max(cp_azoteans,3)
 <NameAzotean>We mean no harm ! Why bring these instruments of war ?
 <NameAzotean>It's so sad how history seems to repeat itself over and over...
 <Talk>... Okay, let's stow our guns people. They really seem harmless.
@@ -158,7 +158,6 @@ We slowly enter the group of {creaturesName}.
 = Talk_on_the_way_back
 We left early and had a chance to talk on the way back home...
 Many questions ran through our heads.
-TODO check if the following lines work
 {
 -cp_mission>=1||getTraitor("active")>=0:
     As we exposed our theories it became clear to everybody that the government had something in mind...
