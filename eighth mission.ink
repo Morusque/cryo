@@ -57,12 +57,23 @@
 
 
 = Secrets_success
-We reveal all the secrets about the president's plans, he's imprisonned.
+(... later ...)
+Here we are, back on earth.
+I'm writing the very last lines of our mission report and lifetime story.
+We've explained in detail why we refused to obey our orders.
+All the secrets about our mission will be revealed.
+I'm confident this report contains enough to launch a claim against the president.
+The politics of the GOE will likely change forever, thanks to us.
 ->END
 
 
 = Secrets_fail
-We come back to earth to launch a claim against the president, but didn't bring enough proofs against him.
+(... later ...)
+Here we are, back on earth.
+I'm writing the very last lines of our mission report and lifetime story.
+Sadly, I know most of it will never leave our lab, and we'll have to remain silent.
+The justice on earth has become even weirder and we failed to gather enough evidence against the GOE.
+I guess all these secrets will stay in our memories and, someday, disappear with us.
 ->END
 
 
@@ -113,6 +124,9 @@ Unfortunately most of us are dead when the rescue ship arrives.
 
 = AliveCount_Fail
 We decide to forget about all this story, we return to earth and live a happy life.
+->The_end
+
+=== The_end ===
+THE END
 ->END
-
-
+// end of ending part
