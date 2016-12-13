@@ -2,7 +2,7 @@
 TODO add those somewhere...
 
 === Next_expedition ===
-*<Leader>What will happen if we never convert the nitrogen from the atmosphere?
+*<Leader>Just wanted to ask ... What will happen if we never convert the nitrogen from the atmosphere?
 {
 -cp_inhabitants>=4:
     <Lazy>Well, I'm pretty sure a new expedition will come, and then another one...
@@ -34,7 +34,7 @@ TODO le traître a débranché l'un des scaphandres
 
 
 === Minerals ===
-{cp_azoteans>=5}*<Talk> This azotean holocauste, what was it about anyway ?
+{cp_azoteans>=5}*<Talk> Just wondering.. This azotean holocauste, what was it about anyway ?
     <Leader> I'm not sure but I heard a story -at the time I thought it was complotist rantings-..
     <Leader> They say the GOE had sent teams plunder whole planetary systems for rare minerals.
     <Leader> But they didn't expect that other forms of life were there.

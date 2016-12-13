@@ -95,7 +95,7 @@ The humans burst into a frank laugh.
 <$Combat>I'm still having a hard time trusting guys that wear space blobs as hats.
 <$Science>Please just keep quiet.
 {
-    -isActive("Brandon"):
+    -skillScore("Combat")>10:
     <Combat>Would you assist us if we are in danger one day for any reason ?
     <NameSymbiot>I'm not sure what kind of assistance you have in mind, but why not.
     ~military=military+1
