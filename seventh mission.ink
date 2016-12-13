@@ -3,6 +3,7 @@ VAR decision = -1
 // secrets, relations, knowledge, resources, military, aliveCount
 
 === Mission_Decide ===
+We sit around the table, trying to get our heads clear.
 #loop:cryogénie 7
 <Leader> I'm not sure what to think about this mission anymore.
 <Leader>Let's sum up the situation.

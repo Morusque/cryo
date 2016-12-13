@@ -127,7 +127,7 @@ Mission log n°{missionNumber + 1}
     -> Mission_Talk_to_Azoteans
 *{Mission_Talk_to_Azoteans}<Leader>The previous expedition...
     -> Mission_Talk_to_inhabitants
-*{Mission_Talk_to_inhabitants}<Leader>So, what do we do ?
+*{Mission_Talk_to_inhabitants}<Leader>We should decide what to do with all the new information...
     -> Mission_Decide
 *{Mission_Decide}<Leader>Soon, the ship will arrive
     -> Mission_Leave
